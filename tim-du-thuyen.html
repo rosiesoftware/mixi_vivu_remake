@@ -1,0 +1,341 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixi Vivu</title>
+    <link rel="stylesheet" href="style_vu.css">
+    <link href="img/favicon.png" rel="shortcut icon">
+</head>
+<body class="tim-du-thuyen">
+    <div class="navbar">
+         <a href="index.html">
+            <img class="logo-web" src="img/black-logo.webp" alt="logo web">
+        </a>
+        <ul>
+            <li><a href="tim-du-thuyen.html">Tìm du thuyền</a></li>
+            <li><a href="tim-ve-may-bay.html">Tìm vé máy bay</a></li>
+            <li><a href="tim-khach-san.html">Tìm khách sạn</a></li>
+            <li><a href="doanh-nghiep.html">Doanh nghiệp</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="navbar-info">
+            <div>
+                <b class="hotline-text">Hotline: 0912345678</b>
+            </div>
+            <a id="btn-contact" href="lien-he.html">Liên hệ Mixivivu</a>
+            <div class="menu-icon" onclick="showMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-duthuyen">
+        <form action="#">
+            <div class="menu-search-2">
+                <div class="container">
+                <h1>Bạn lựa chọn du thuyền Hạ Long nào?</h1>
+                <p>Hơn 100 tour du thuyền hạng sang giá tốt đang chờ bạn</p>
+                <div class="form-search-boat">
+                    <div class="input-search">
+                        <input type="text" placeholder="Nhập tên du thuyền" id="name_boat">
+                    </div>
+                    <div class="dropdown">
+                        <input type="button" onclick="showDropDown(this)" id="address" value="Tất cả địa điểm">
+                        <div id="addressDropDown" class="dropdown-content">
+                            <a onclick="hideDropDown(this, 'address', 'addressDropDown')">Tất cả địa điểm</a>
+                            <a onclick="hideDropDown(this, 'address', 'addressDropDown')">Vịnh Hạ Long</a>
+                            <a onclick="hideDropDown(this, 'address', 'addressDropDown')">Vịnh Lan Hạ</a>
+                            <a onclick="hideDropDown(this, 'address', 'addressDropDown')">Đảo Cát Bà</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <input type="button" onclick="showDropDown(this)" id="cost" value="Tất cả mức giá">
+                        <div id="costDropDown" class="dropdown-content">
+                            <a onclick="hideDropDown(this, 'cost', 'costDropDown')">Tất cả mức giá</a>
+                            <a onclick="hideDropDown(this, 'cost', 'costDropDown')">Từ 1 đến 3 triệu</a>
+                            <a onclick="hideDropDown(this, 'cost', 'costDropDown')">Từ 3 đến 6 triệu</a>
+                            <a onclick="hideDropDown(this, 'cost', 'costDropDown')">Trên 6 triệu</a>
+                        </div>
+                    </div>
+                    <div class="button-form">
+                        <button id="btn-search" href="#">Tìm kiếm</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </form>
+       
+        <div class="section-1">
+            <div class="result-search">
+                <h1>Tìm thấy 71 kết quả</h1>
+            </div>
+            <div class="dropdown">
+                <input type="button" id="filter-result" class="bo-loc" style="display: none;" value="Bộ lọc">
+            </div>
+            <div class="dropdown">
+                <input type="button" onclick="showDropDown(this)" id="filter-result" value="Không sắp xếp">
+                <div id="filterDropDown" class="dropdown-content">
+                    <a onclick="hideDropDown(this, 'filter-result', 'filterDropDown')">Không sắp xếp</a>
+                    <a onclick="hideDropDown(this, 'filter-result', 'filterDropDown')">Giá thấp đến cao</a>
+                    <a onclick="hideDropDown(this, 'filter-result', 'filterDropDown')">Giá cao đến thấp</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="cell1">
+                <div class="row1">
+                   <div class="panel-filter">
+                        <div class="section-filter1">
+                            <h3 class="filter-title">Lọc kết quả</h3>
+                            <div class="reset-filter">Đặt lại</div>
+                        </div>
+                        <hr>
+                        <div class="section-filter2">
+                            <div class="section-filter2-1">
+                                <h3 class="filter-title">Xếp hạng sao</h3>
+                                <div class="checkbox-result">
+                                    <ul>
+                                        <li><label><input type="checkbox"> 3 sao</label></li>
+                                        <li><label><input type="checkbox"> 4 sao</label></li>
+                                        <li><label><input type="checkbox"> 5 sao</label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="section-filter2-2">
+                                <h3 class="filter-title">Tiện ích</h3>
+                                <div class="checkbox-result">
+                                    <ul>
+                                        <li><label><input type="checkbox"> Phòng gia đình</label></li>
+                                        <li><label><input type="checkbox"> Có bể sục</label></li>
+                                        <li><label><input type="checkbox"> Bao gồm tất cả các bữa ăn</label></li>
+                                        <li><label><input type="checkbox"> Giáp biển</label></li>
+                                        <li><label><input type="checkbox"> Quầy bar</label></li>
+                                        <li><label><input type="checkbox"> Lễ tân 24 giờ</label></li>
+                                        <li><label><input type="checkbox"> Khu vực bãi tắm riêng</label></li>
+                                        <li><label><input type="checkbox"> Nhà hàng</label></li>
+                                        <li><label><input type="checkbox"> Trung tâm thể dục</label></li>
+                                        <li><label><input type="checkbox"> Phòng có bồn tắm</label></li>
+                                        <li><label><input type="checkbox"> Wi-Fi miễn phí</label></li>
+                                        <li><label><input type="checkbox"> Miễn phí kayaking</label></li>
+                                        <li><label><input type="checkbox"> Trung tâm Spa & chăm sóc sức khoẻ</label></li>
+                                        <li><label><input type="checkbox"> Chỗ đỗ xe miễn phí</label></li>
+                                        <li><label><input type="checkbox"> Miễn phí xe đưa đón</label></li>
+                                        <li><label><input type="checkbox"> Có bể bơi ngoài trời</label></li>
+                                        <li><label><input type="checkbox"> Đi tuyến Lan Hạ</label></li>
+                                        <li><label><input type="checkbox"> Phòng không hút thuốc</label></li>
+                                        <li><label><input type="checkbox"> Bể bơi ngoài trời</label></li>
+                                        <li><label><input type="checkbox"> Du thuyền 5 sao</label></li>
+                                        <li><label><input type="checkbox"> Chỗ đỗ xe</label></li>
+                                        <li><label><input type="checkbox"> Trà/cà phê trong tất cả các phòng</label></li>
+                                        <li><label><input type="checkbox"> Nhìn ra biển</label></li>
+                                        <li><label><input type="checkbox"> Điều hoà</label></li>
+                                        <li><label><input type="checkbox"> Cửa sổ từ sàn đến trần</label></li>
+                                        <li><label><input type="checkbox"> Sạc điện thoại</label></li>
+                                        <li><label><input type="checkbox"> Hồ bơi có tầm nhìn</label></li>
+                                        <li><label><input type="checkbox"> Ban công riêng</label></li>
+                                        <li><label><input type="checkbox"> Wi-Fi</label></li>
+                                        <li><label><input type="checkbox"> Két an toàn</label></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row2"></div>
+                <div class="row3"></div>
+            </div>
+            <div class="cell2">
+                <div class="card-info-boat">
+                    <div class="card-boat-img">
+                        <div class="rating">4.9 (12) đánh giá</div>
+                        <img src="img/boat1.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p class="tour-address">Vịnh Hạ Long</p>
+                        <p class="card-title">Du thuyền Heritage Bình Chuẩn Cát Bà</p>
+                        <p class="card-des">Hạ thuỷ 2019 - Tàu vỏ kim loại - 20 phòng</p>
+                        <div class="card-more-info">
+                            <ul>
+                                <li>Có bể sục</li>
+                                <li>Bao gồm tất cả các bữa ăn</li>
+                                <li>Quầy bar</li>
+                                <li>Lễ tân 24 giờ</li>
+                                <li>Nhà hàng</li>
+                                <li>+10</li>
+                            </ul>
+                        </div>
+                        <hr class="card-hr">
+                        <div class="card-cost">
+                            <span>4,150,000đ/khách</span>
+                            <button class="card-submit">Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-info-boat">
+                    <div class="card-boat-img">
+                        <div class="rating">4.9 (12) đánh giá</div>
+                        <img src="img/boat1.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p class="tour-address">Vịnh Hạ Long</p>
+                        <p class="card-title">Du thuyền Heritage Bình Chuẩn Cát Bà</p>
+                        <p class="card-des">Hạ thuỷ 2019 - Tàu vỏ kim loại - 20 phòng</p>
+                        <div class="card-more-info">
+                            <ul>
+                                <li>Có bể sục</li>
+                                <li>Bao gồm tất cả các bữa ăn</li>
+                                <li>Quầy bar</li>
+                                <li>Lễ tân 24 giờ</li>
+                                <li>Nhà hàng</li>
+                                <li>+10</li>
+                            </ul>
+                        </div>
+                        <hr class="card-hr">
+                        <div class="card-cost">
+                            <span>4,150,000đ/khách</span>
+                            <button class="card-submit">Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-info-boat">
+                    <div class="card-boat-img">
+                        <div class="rating">4.9 (12) đánh giá</div>
+                        <img src="img/boat1.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p class="tour-address">Vịnh Hạ Long</p>
+                        <p class="card-title">Du thuyền Heritage Bình Chuẩn Cát Bà</p>
+                        <p class="card-des">Hạ thuỷ 2019 - Tàu vỏ kim loại - 20 phòng</p>
+                        <div class="card-more-info">
+                            <ul>
+                                <li>Có bể sục</li>
+                                <li>Bao gồm tất cả các bữa ăn</li>
+                                <li>Quầy bar</li>
+                                <li>Lễ tân 24 giờ</li>
+                                <li>Nhà hàng</li>
+                                <li>+10</li>
+                            </ul>
+                        </div>
+                        <hr class="card-hr">
+                        <div class="card-cost">
+                            <span>4,150,000đ/khách</span>
+                            <button class="card-submit">Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-info-boat">
+                    <div class="card-boat-img">
+                        <div class="rating">4.9 (12) đánh giá</div>
+                        <img src="img/boat1.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p class="tour-address">Vịnh Hạ Long</p>
+                        <p class="card-title">Du thuyền Heritage Bình Chuẩn Cát Bà</p>
+                        <p class="card-des">Hạ thuỷ 2019 - Tàu vỏ kim loại - 20 phòng</p>
+                        <div class="card-more-info">
+                            <ul>
+                                <li>Có bể sục</li>
+                                <li>Bao gồm tất cả các bữa ăn</li>
+                                <li>Quầy bar</li>
+                                <li>Lễ tân 24 giờ</li>
+                                <li>Nhà hàng</li>
+                                <li>+10</li>
+                            </ul>
+                        </div>
+                        <hr class="card-hr">
+                        <div class="card-cost">
+                            <span>4,150,000đ/khách</span>
+                            <button class="card-submit">Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-info-boat">
+                    <div class="card-boat-img">
+                        <div class="rating">4.9 (12) đánh giá</div>
+                        <img src="img/boat1.webp" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p class="tour-address">Vịnh Hạ Long</p>
+                        <p class="card-title">Du thuyền Heritage Bình Chuẩn Cát Bà</p>
+                        <p class="card-des">Hạ thuỷ 2019 - Tàu vỏ kim loại - 20 phòng</p>
+                        <div class="card-more-info">
+                            <ul>
+                                <li>Có bể sục</li>
+                                <li>Bao gồm tất cả các bữa ăn</li>
+                                <li>Quầy bar</li>
+                                <li>Lễ tân 24 giờ</li>
+                            </ul>
+                        </div>
+                        <hr class="card-hr">
+                        <div class="card-cost">
+                            <span>4,150,000đ/khách</span>
+                            <button class="card-submit">Đặt ngay</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pagination-container">
+                    <div class="pagination-info">
+                        Đang xem: <span class="current">5</span> của <span class="total">71</span>
+                    </div>
+                    <ul class="pagination">
+                        <li class="page-item prev" id="prev-page"><a href="#">Trước</a></li>
+                        <li class="page-item active"><a href="#">1</a></li>
+                        <li class="page-item"><a href="#">2</a></li>
+                        <li class="page-item"><a href="#">3</a></li>
+                        <li class="page-item"><a href="#">...</a></li>
+                        <li class="page-item"><a href="#">13</a></li>
+                        <li class="page-item"><a href="#">14</a></li>
+                        <li class="page-item"><a href="#">15</a></li>
+                        <li class="page-item next" id="next-page"><a href="#">Tiếp</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+
+    <footer class="chan-footer">
+        <div class="container-footer">
+        <div class="cot-footer">
+            <img src="img/white-logo.png" alt="Mixivivu Logo" class="logo-footer" />
+            <p>Công ty TNHH Du Lịch và Dịch Vụ Mixivivu</p>
+            <p>Tầng 7, số nhà 25, ngõ 38 phố Yên Lãng, phường Láng Hạ, quận Đống Đa, TP. Hà Nội</p>
+            <p>Mã số doanh nghiệp: 0110376372</p>
+            <p>Hotline: <strong>0922222016</strong></p>
+            <p>Email: <a href="mailto:info@mixivivu.com">info@mixivivu.com</a></p>
+        </div>
+
+        <div class="cot-footer">
+            <h3>GIỚI THIỆU</h3>
+            <a href="#">Về chúng tôi</a>
+            <a href="#">Điều khoản và điều kiện</a>
+            <a href="#">Chính sách riêng tư</a>
+            <a href="#">Hướng dẫn sử dụng</a>
+            <a href="#">Hình thức thanh toán</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <div class="cot-footer">
+            <h3>ĐIỂM ĐẾN</h3>
+            <a href="#">Vịnh Hạ Long</a>
+            <a href="#">Vịnh Lan Hạ</a>
+            <a href="#">Đảo Cát Bà</a>
+        </div>
+
+        <div class="cot-footer">
+            <h3>DU THUYỀN</h3>
+            <a href="#">Blog</a>
+            <a href="#">Quy định chung và lưu ý</a>
+            <a href="#">Câu hỏi thường gặp</a>
+        </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

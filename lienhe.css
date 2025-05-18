@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+/*Thanh điều hướng*/
+.dieuhuong {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+.hop-dieuhuong {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+  
+.menu a:hover {
+    color: #6fdcdc;
+}
+  
+.lienhe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+  
+.hotline {
+    font-weight: bold;
+    color: #003366;
+}
+  
+.nut-lienhe {
+    background: #6fdcdc;
+    color: black;
+    border-radius: 20px;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: 400;
+}
+  
+.nut-lienhe:hover {
+    background: #54c4c4;
+}
+  
+/*Form liên hệ*/
+.hop-form {
+    background: url('img/background.png') center/cover;
+    margin: 100px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+  
+.hop-form h2,
+.hop-form p {
+    text-align: center;
+}
+  
+.hop-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.hop-form p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #555;
+}
+  
+.form {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: auto;
+}
+  
+.nhom-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+  
+.nhom-form input,
+.nhom-form textarea {
+    flex: 1 1 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 14px;
+    resize: none;
+}
+  
+.nhom-form.nua {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.nua-form {
+    flex: 1;
+}
+  
+.nhan {
+    font-weight: 500;
+    margin-top: 15px;
+    display: block;
+}
+  
+button {
+    width: 100%;
+    padding: 14px;
+    background: #79d9db;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px; 
+}
+  
+button:hover {
+    background: #5ec3c5;
+}
+  
+/*Footer*/
+.chan-footer {
+    background: #0D1321;
+    color: #B0BEC5;
+    padding: 40px 20px;
+}
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cot-footer {
+    width: 22%;
+    min-width: 200px;
+    margin-bottom: 20px; /* Thêm margin dưới mỗi cột */
+}
+  
+.cot-footer h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+  
+.cot-footer a {
+    display: block;
+    color: #B0BEC5;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+  
+.cot-footer a:hover {
+    color: #115380;
+}
+  
+.logo-footer {
+    width: 150px;
+    margin-bottom: 15px;
+}
+  
+.chan-footer-duoi {
+    border-top: 1px solid #1C2331;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+  
+.chan-footer-duoi img {
+    width: 120px;
+    margin-top: 10px;
+}
+  
+
+  

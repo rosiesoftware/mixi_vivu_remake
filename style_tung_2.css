@@ -1,0 +1,298 @@
+/* ------- Reset & Cơ bản ------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+/* ------- HEADER - Navbar ------- */
+.dieuhuong {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.hop-dieuhuong {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #6fdcdc;
+}
+
+.lienhe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.hotline {
+  font-weight: bold;
+  color: #003366;
+}
+
+.nut-lienhe {
+  background: #6fdcdc;
+  color: black;
+  border-radius: 20px;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nut-lienhe:hover {
+  background: #54c4c4;
+}
+
+/* ------- MIXIVIVU SEARCH BANNER MỚI ------- */
+/* Container chính */
+.overlay-box {
+  position: relative;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 48px 32px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 1100px;
+  text-align: center;
+  z-index: 10;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Tiêu đề */
+.overlay-box h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #111827;
+}
+
+/* Mô tả phụ */
+.overlay-box p {
+  color: #6b7280;
+  margin-bottom: 32px;
+  font-size: 17px;
+}
+
+/* Hàng input */
+.input-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Input và select */
+.input-group input,
+.input-group select {
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  min-width: 220px;
+  background-color: #f9f9f9;
+  outline: none;
+  color: #111;
+}
+
+.input-group input::placeholder {
+  color: #6b7280;
+  font-weight: 400;
+}
+
+/* Nút tìm kiếm */
+.input-group button {
+  padding: 14px 32px;
+  background-color: #20c997;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-group button:hover {
+  background-color: #17b48a;
+}
+
+
+
+/* ------- Section: Intro (2 cột + Feature) ------- */
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 40px;
+  max-width: 1200px;
+  margin: 60px auto 0 auto; 
+  background: #ffffff;
+  border-radius: 20px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+.intro-col {
+  flex: 1;
+  min-width: 320px;
+}
+
+.intro-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #1d2c38;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.intro-underline {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.intro-underline span {
+  width: 28px;
+  height: 6px;
+  background-color: #19bac6;
+  border-radius: 10px;
+}
+
+.intro-desc {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.btn-mixi {
+  display: inline-block;
+  padding: 13px 28px;
+  background-color: #19bac6;
+  color: white;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-mixi:hover {
+  background-color: #17a2b8;
+}
+
+.intro-feature-box {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 22px;
+  align-items: flex-start;
+}
+
+.intro-feature-box img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.feature-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/*Footer*/
+.chan-footer {
+  background: #0D1321;
+  color: #B0BEC5;
+  padding: 40px 20px;
+}
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cot-footer {
+  width: 22%;
+  min-width: 200px;
+  margin-bottom: 20px; 
+}
+
+.cot-footer h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.cot-footer a {
+  display: block;
+  color: #B0BEC5;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.cot-footer a:hover {
+  color: #115380;
+}
+
+.logo-footer {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.chan-footer-duoi {
+  border-top: 1px solid #1C2331;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+.chan-footer-duoi img {
+  width: 120px;
+  margin-top: 10px;
+}

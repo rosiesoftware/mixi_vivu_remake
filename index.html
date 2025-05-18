@@ -1,0 +1,346 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_vu.css">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <title>Mixi Vivu</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">
+            <img class="logo-web" src="img/black-logo.webp" alt="logo web">
+        </a>
+        <ul>
+            <li><a href="tim-du-thuyen.html">Tìm du thuyền</a></li>
+            <li><a href="tim-ve-may-bay.html">Tìm vé máy bay</a></li>
+            <li><a href="tim-khach-san.html">Tìm khách sạn</a></li>
+            <li><a href="doanh-nghiep.html">Doanh nghiệp</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="navbar-info">
+            <div>
+                <b class="hotline-text">Hotline: 0912345678</b>
+            </div>
+            <a id="btn-contact" href="lien-he.html">Liên hệ Mixivivu</a>
+            <div class="menu-icon" onclick="showMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="section-1-index">
+        <div class="video-banner">
+            <video src="img/Mixivivuduthuyen.mp4" autoplay loop muted></video>
+            <form action="#">
+                <div class="menu-search">
+                    <div class="container">
+                        <h1>Bạn lựa chọn du thuyền Hạ Long nào?</h1>
+                        <p>Hơn 100 tour du thuyền hạng sang giá tốt đang chờ bạn</p>
+                        <div class="form-search">
+                            <div class="input-search">
+                                <input type="text" placeholder="Nhập tên du thuyền" id="name_boat">
+                            </div>
+                            <div class="dropdown">
+                                <input type="button" onclick="showDropDown(this)" id="address" value="Tất cả địa điểm">
+                                <div id="addressDropDown" class="dropdown-content">
+                                    <a onclick="hideDropDown(this, 'address', 'addressDropDown')">Tất cả địa điểm</a>
+                                    <a onclick="hideDropDown(this, 'address', 'addressDropDown')">Vịnh Hạ Long</a>
+                                    <a onclick="hideDropDown(this, 'address', 'addressDropDown')">Vịnh Lan Hạ</a>
+                                    <a onclick="hideDropDown(this, 'address', 'addressDropDown')">Đảo Cát Bà</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <input type="button" onclick="showDropDown(this)" id="cost" value="Tất cả mức giá">
+                                <div id="costDropDown" class="dropdown-content">
+                                    <a onclick="hideDropDown(this, 'cost', 'costDropDown')">Tất cả mức giá</a>
+                                    <a onclick="hideDropDown(this, 'cost', 'costDropDown')">Từ 1 đến 3 triệu</a>
+                                    <a onclick="hideDropDown(this, 'cost', 'costDropDown')">Từ 3 đến 6 triệu</a>
+                                    <a onclick="hideDropDown(this, 'cost', 'costDropDown')">Trên 6 triệu</a>
+                                </div>
+                            </div>
+                            <div class="button-form">
+                                <button id="btn-search" href="#">Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    
+    
+
+    <div class="intro">
+        <div class="cell1">
+            <h1>Du thuyền mới và phổ biến nhất</h1>
+        </div>
+        <div class="cell2">
+            <p>Tận hưởng sự xa hoa và đẳng cấp tối đa trên du thuyền mới nhất và phổ biến nhất. Khám phá một hành trình tuyệt vời đưa bạn vào thế giới của sự sang trọng, tiện nghi và trải nghiệm không thể quên.</p>
+        </div>
+    </div>
+
+    <div class="list-boat">
+        <div class="card-info">
+           <img src="img/boat1.webp" alt="">
+            <div class="card-content">
+                <p class="tour-address">Vịnh Hạ Long</p>
+                <p class="card-title">Du thuyền Grand Pioneers</p>
+                <p class="card-des">Hạ thuỷ 2023 - Tàu vỏ Kim loại - 56 phòng</p>
+            </div>
+            <div class="card-footer">
+                <p>5,150,000đ / khách</p>
+                <button class="card-submit" href="#">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <img src="img/boat1.webp" alt="">
+            <div class="card-content">
+                <p class="tour-address">Vịnh Hạ Long</p>
+                <p class="card-title">Du thuyền Grand Pioneers</p>
+                <p class="card-des">Hạ thuỷ 2023 - Tàu vỏ Kim loại - 56 phòng</p>
+                <div class="card-footer">
+                    <p>5,150,000đ / khách</p>
+                    <button class="card-submit" href="#">Đặt ngay</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="card-info">
+            <img src="img/boat1.webp" alt="">
+            <div class="card-content">
+                <p class="tour-address">Vịnh Hạ Long</p>
+                <p class="card-title">Du thuyền Grand Pioneers</p>
+                <p class="card-des">Hạ thuỷ 2023 - Tàu vỏ Kim loại - 56 phòng</p>
+            </div>
+            <div class="card-footer">
+                <p>5,150,000đ / khách</p>
+                <button class="card-submit" href="#">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <img src="img/boat1.webp" alt="">
+            <div class="card-content">
+                <p class="tour-address">Vịnh Hạ Long</p>
+                <p class="card-title">Du thuyền Grand Pioneers</p>
+                <p class="card-des">Hạ thuỷ 2023 - Tàu vỏ Kim loại - 56 phòng</p>
+            </div>
+            <div class="card-footer">
+                <p>5,150,000đ / khách</p>
+                <button class="card-submit" href="#">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <img src="img/boat1.webp" alt="">
+            <div class="card-content">
+                <p class="tour-address">Vịnh Hạ Long</p>
+                <p class="card-title">Du thuyền Grand Pioneers</p>
+                <p class="card-des">Hạ thuỷ 2023 - Tàu vỏ Kim loại - 56 phòng</p>
+            </div>
+            <div class="card-footer">
+                <p>5,150,000đ / khách</p>
+                <button class="card-submit" href="#">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <img src="img/boat1.webp" alt="">
+            <div class="card-content">
+                <p class="tour-address">Vịnh Hạ Long</p>
+                <p class="card-title">Du thuyền Grand Pioneers</p>
+                <p class="card-des">Hạ thuỷ 2023 - Tàu vỏ Kim loại - 56 phòng</p>
+            </div>
+            <div class="card-footer">
+                <p>5,150,000đ / khách</p>
+                <button class="card-submit" href="#">Đặt ngay</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="view-all-boat">Xem tất cả du thuyền &rarr;</button>
+    </div>
+
+    <div class="feedback">
+        <div class="fb-row1">
+            <div class="fb-cell1">
+                <h1>Đánh giá từ những người đã trải nghiệm</h1>
+            </div>
+            <div class="fb-cell2">
+                <p>Khách hàng chia sẻ về những kỷ niệm tuyệt vời trên chuyến du lịch với chúng tôi.</p>
+            </div>
+        </div>
+        <div class="fb-row2">
+            <div class="feedback-content">
+                <div class="feedback-title">
+                    <div><h1>&ldquo;</h1></div>
+                    <h3 id="feedback-title" class="feedback-title-duthuyen">Du thuyền Heritage Bình Chuẩn
+                    </h3>
+                </div>
+                <div class="feedback-content">
+                    <p id="feedback-content" class="feedback-content-duthuyen">Chị rất cảm ơn team đã tư vấn cho chị chọn du thuyền Heritage Bình Chuẩn. Bố mẹ chị rất ưng í em ạ!
+                        Tàu đẹp, mang đậm phong cách Á Đông. Đồ ăn hợp khẩu vị. Các bạn nhân viên trên tàu nhiệt tình và chu đáo.</p>
+                </div>
+                <div class="feedback-customer">
+                    <h3 id="feedback-customer" class="feedback-customer-duthuyen">Chị Thu Hà -</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-customer-feedback">
+            <ul>
+                <li><a onclick="loadFeedback(this)">Chị Thu Hà</a></li>
+                <li><a onclick="loadFeedback(this)">Anh Khánh</a></li>
+                <li><a onclick="loadFeedback(this)">Chị Linh - Anh Dũng</a></li>
+                <li><a onclick="loadFeedback(this)">Bạn Minh Hoàng</a></li>
+                <li><a onclick="loadFeedback(this)">Cô Thanh và bạn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="intro-2">
+        <div>
+            <h1>Các điểm đến của Mixivivu</h1>
+            <p>Khám phá vẻ đẹp tuyệt vời của Du thuyền Hạ Long: Hành trình đến thiên đường thiên nhiên</p>
+        </div>
+    </div>
+
+    
+    <div class="list-address">
+        <div class="card-info">
+            <img src="img/address1.png" alt="">
+            <div class="card-address-content">
+                <h2 class="card-address-title">Vịnh Hạ Long</h2>
+            </div>
+            <div class="card-address-footer">
+                <button href="#">Xem ngay</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <img src="img/address2.png" alt="">
+            <div class="card-address-content">
+                <h2 class="card-address-title">Vịnh Lan Hạ</h2>
+            </div>
+            <div class="card-address-footer">
+                <button href="#">Xem ngay</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <img src="img/address3.png" alt="">
+            <div class="card-address-content">
+                <h2 class="card-address-title">Đảo Cát Bà</h2>
+            </div>
+            <div class="card-address-footer">
+                <button href="#">Xem ngay</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="partner">
+        <div class="fb-row1">
+            <div class="fb-cell1">
+                <h1>Đối tác Cùng các
+                    Hãng Du thuyền Lớn</h1>
+            </div>
+            <div class="fb-cell2">
+                <p>Đối tác hàng đầu với các hãng du thuyền danh tiếng: Ưu đãi độc quyền dành riêng cho bạn</p>
+            </div>
+        </div>
+        <div class="partner-row2">
+            <ul>
+                <li><img src="img/partner1.png" alt=""></li>
+                <li><img src="img/partner2.png" alt=""></li>
+                <li><img src="img/partner3.png" alt=""></li>
+                <li><img src="img/partner4.png" alt=""></li>
+                <li><img src="img/partner5.png" alt=""></li>
+                <li><img src="img/partner6.png" alt=""></li>
+                <li><img src="img/partner7.png" alt=""></li>
+                <li><img src="img/partner8.png" alt=""></li>
+                <li><img src="img/partner9.png" alt=""></li>
+                <li><img src="img/partner10.png" alt=""></li>
+                <li><img src="img/partner11.png" alt=""></li>
+                <li><img src="img/partner12.png" alt=""></li>
+                <li><img src="img/partner13.png" alt=""></li>
+                <li><img src="img/partner14.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="cell1">
+            <h1>Hạ Long: Khám phá Sự đặc sắc
+                và Cập nhật tin tức mới nhất</h1>
+        </div>
+        <div class="cell2">
+            <p>Hạ Long: Bí mật và Cuộc sống trong Vịnh - Khám phá và Cập nhật những tin tức hấp dẫn từ điểm đến tuyệt vời này.</p>
+        </div>
+    </div>
+    <div class="list-address">
+        <div class="card-info">
+            <img src="img/halong.webp" alt="">
+            <div class="card-address-content">
+                <h3 class="card-address-title">Du lịch Hạ Long - thời gian nào là đẹp nhất?</h3>
+                <p class="card-address-des">Hạ Long là một trong những điểm du lịch hot nhất miền Bắc được rất nhiều du khách yêu thích. Không chỉ có cảnh quan thiên nhiên ngoạn mục mà còn có vô số hoạt động trải nghiệm hấp dẫn như lênh đênh trên biển, ngắm cảnh từ du thuyền, tắm biển, chèo thuyền kayak, thăm các làng chài nổi tiếng trên vịnh. Vậy, đi Hạ Long vào mùa nào là đẹp nhất để có chuyến đi trọn vẹn và ý nghĩa nhất, hãy cùng tìm hiểu nhé</p>
+                <p>25/04/2025</p>
+            </div>
+        </div>
+        <div class="card-info">
+            <img src="img/halong.webp" alt="">
+            <div class="card-address-content">
+                <h3 class="card-address-title">Du lịch Hạ Long - thời gian nào là đẹp nhất?</h3>
+                <p class="card-address-des">Hạ Long là một trong những điểm du lịch hot nhất miền Bắc được rất nhiều du khách yêu thích. Không chỉ có cảnh quan thiên nhiên ngoạn mục mà còn có vô số hoạt động trải nghiệm hấp dẫn như lênh đênh trên biển, ngắm cảnh từ du thuyền, tắm biển, chèo thuyền kayak, thăm các làng chài nổi tiếng trên vịnh. Vậy, đi Hạ Long vào mùa nào là đẹp nhất để có chuyến đi trọn vẹn và ý nghĩa nhất, hãy cùng tìm hiểu nhé</p>
+                <p>25/04/2025</p>
+            </div>
+        </div>
+        <div class="card-info">
+            <img src="img/halong.webp" alt="">
+            <div class="card-address-content">
+                <h3 class="card-address-title">Du lịch Hạ Long - thời gian nào là đẹp nhất?</h3>
+                <p class="card-address-des">Hạ Long là một trong những điểm du lịch hot nhất miền Bắc được rất nhiều du khách yêu thích. Không chỉ có cảnh quan thiên nhiên ngoạn mục mà còn có vô số hoạt động trải nghiệm hấp dẫn như lênh đênh trên biển, ngắm cảnh từ du thuyền, tắm biển, chèo thuyền kayak, thăm các làng chài nổi tiếng trên vịnh. Vậy, đi Hạ Long vào mùa nào là đẹp nhất để có chuyến đi trọn vẹn và ý nghĩa nhất, hãy cùng tìm hiểu nhé</p>
+                <p>25/04/2025</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="view-all-boat">Xem tất cả &rarr;</button>
+    </div>
+
+    <footer class="chan-footer">
+        <div class="container-footer">
+        <div class="cot-footer">
+            <img src="img/white-logo.png" alt="Mixivivu Logo" class="logo-footer" />
+            <p>Công ty TNHH Du Lịch và Dịch Vụ Mixivivu</p>
+            <p>Tầng 7, số nhà 25, ngõ 38 phố Yên Lãng, phường Láng Hạ, quận Đống Đa, TP. Hà Nội</p>
+            <p>Mã số doanh nghiệp: 0110376372</p>
+            <p>Hotline: <strong>0922222016</strong></p>
+            <p>Email: <a href="mailto:info@mixivivu.com">info@mixivivu.com</a></p>
+        </div>
+
+        <div class="cot-footer">
+            <h3>GIỚI THIỆU</h3>
+            <a href="#">Về chúng tôi</a>
+            <a href="#">Điều khoản và điều kiện</a>
+            <a href="#">Chính sách riêng tư</a>
+            <a href="#">Hướng dẫn sử dụng</a>
+            <a href="#">Hình thức thanh toán</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <div class="cot-footer">
+            <h3>ĐIỂM ĐẾN</h3>
+            <a href="#">Vịnh Hạ Long</a>
+            <a href="#">Vịnh Lan Hạ</a>
+            <a href="#">Đảo Cát Bà</a>
+        </div>
+
+        <div class="cot-footer">
+            <h3>DU THUYỀN</h3>
+            <a href="#">Blog</a>
+            <a href="#">Quy định chung và lưu ý</a>
+            <a href="#">Câu hỏi thường gặp</a>
+        </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

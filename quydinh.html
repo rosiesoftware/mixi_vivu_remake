@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mixivivu</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*thanh điều hướng*/
+.dieuhuong {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+.hop-dieuhuong {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+  
+.menu a:hover {
+    color: #6fdcdc;
+}
+  
+.lienhe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+  
+.hotline {
+    font-weight: bold;
+    color: #003366;
+}
+  
+.nut-lienhe {
+    background: #6fdcdc;
+    color: black;
+    border-radius: 20px;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: 400;
+}
+  
+.nut-lienhe:hover {
+    background: #54c4c4;
+}
+/*nội dung*/
+.faq-section {
+  max-width: 650px;
+  margin: 48px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px 0 rgba(30, 41, 59, 0.09);
+  padding: 32px 24px;
+}
+
+.faq-title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444444;
+  letter-spacing: -0.5px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: #f7fafc;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e3ea;
+  box-shadow: 0 2px 8px 0 rgba(30, 41, 59, 0.04);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  padding: 18px 20px 18px 16px;
+  cursor: pointer;
+  transition: background 0.15s;
+  color: #444444;
+  outline: none;
+}
+.faq-question:hover,
+.faq-question[aria-expanded="true"] {
+  background: #ecf0f7;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(.43,1.24,.62,.96);
+  margin-left: 8px;
+  color: #195ca8;
+  font-size: 1.15em;
+}
+.faq-question[aria-expanded="true"] .arrow {
+  transform: rotate(90deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  background: #fff;
+  transition: max-height 0.4s cubic-bezier(.43,1.24,.62,.96), opacity 0.3s ease;
+  font-size: 1rem;
+  padding: 0 32px;
+  color: #374151;
+}
+.faq-item.open .faq-answer {
+  padding: 14px 32px 20px 32px;
+  max-height: 260px;
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .faq-section { padding: 16px 4vw; }
+  .faq-title { font-size: 1.25rem; }
+  .faq-answer { padding-right: 12px; padding-left: 12px; }
+}
+/*footer*/
+.chan-footer {
+    background: #0D1321;
+    color: #B0BEC5;
+    padding: 40px 20px;
+}
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cot-footer {
+    width: 22%;
+    min-width: 200px;
+    margin-bottom: 20px; /* Thêm margin dưới mỗi cột */
+}
+  
+.cot-footer h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+  
+.cot-footer a {
+    display: block;
+    color: #B0BEC5;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+  
+.cot-footer a:hover {
+    color: #115380;
+}
+  
+.logo-footer {
+    width: 150px;
+    margin-bottom: 15px;
+}
+  
+.chan-footer-duoi {
+    border-top: 1px solid #1C2331;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+  
+.chan-footer-duoi img {
+    width: 120px;
+    margin-top: 10px;
+}
+  </style>
+</head>
+<body>
+<!--thanh điều hướng-->
+<nav class="dieuhuong">
+    <div class="hop-dieuhuong">
+      <a class="logo" href="#"><img src="img/logo.png" alt="Logo Mixivivu" height="40"></a>
+      <ul class="menu">
+        <li><a href="tim-du-thuyen.html">Tìm du thuyền</a></li>
+      <li><a href="tim-ve-may-bay.html">Tim vé máy bay</a></li>
+      <li><a href="tim-khach-san.html">Tim khách sạn</a></li>
+      <li><a href="doanh-nghiep.html">Doanh nghiệp</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="lienhe">
+        <i class="fas fa-phone"></i>
+        <span class="hotline">Hotline: 0922222016</span>
+        <a href="#" class="nut-lienhe">Liên hệ Mixivivu</a>
+      </div>
+    </div>
+  </nav>
+<!--nội dung-->
+  <section class="faq-section">
+    <h1 class="faq-title">Quy định</h1>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            Thời gian nhận phòng
+          <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer">
+            Giờ nhận phòng từ 12h15-12h30. Nếu quý khách không sủ dụng dịch vụ xe đưa đón của tàu và tự di chuyển, vui lòng có mặt tại bến tàu muộn nhất là 11h45 để làm thủ tục trước khi lên tàu.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            Thời gian trả phòng
+          <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer">
+            Giờ trả phòng từ 9h30-10h30 tùy thuộc vào lịch trình của tàu. Sau khi trả phòng, quý khách sẽ được phục vụ bữa trưa trên tàu trước khi tàu cập bến.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            Quy định nhận phòng
+          <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer">
+            Đối với người lớn: quý khách vui lòng gửi ảnh chụp CCCD hoặc CMT hoặc Hộ chiếu.
+            <br>
+            Đối với trẻ em dưới 14 tuổi: quý khách vui lòng gửi ảnh chụp Giấy khai sinh hoặc Hộ chiếu
+            <br>
+            Những giấy tờ trên, quý khách vui lòng gửi trước ít nhất 03 ngày trước khi đi tàu và sẽ được yêu cầu xuất trình khi làm thủ tục lên tàu.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            Giá phòng đã bao gồm
+          <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer">
+            + Hướng dẫn viên trên tàu <br>
+            + Các bữa ăn theo tiêu chuẩn (01 bữa trưa, 01 bữa tối, 01 bữa sáng, 1 bữa trưa nhẹ) <br>
+            + Lớp học nấu ăn, Bơi lội (nếu thời tiết cho phép), xem phim, câu mực, xem tivi vệ tinh <br>
+            + Phòng tập gym trên tàu <br>
+            + Vé tham quan tại các điểm có trong chương trình <br>
+            + Phòng theo tiêu chuẩn 5 sao trên du thuyền <br>
+            + Đồ uống chào mừng, khăn lạnh <br>
+            + Nước lọc trong mỗi phòng <br>
+            
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            Giá phòng không bao gồm
+          <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer">
+            + Xe khứ hồi Hà Nội - Hạ Long. Xe Limousine D-car 7 chỗ đưa đón hai chiều (giá 350,000 VND/1 khách/1 chiều và 650,000 VND/1 khách/2 chiều)
+            + Khách sạn lưu trú trên đất liền
+            + Dịch vụ spa Đồ uống trên tàu và thuốc lá
+            + Tiền tip và các chi phí khác không có trong phần đã bao gồm
+        </div>
+      </div>
+    </div>
+  </section>
+<!--footer-->
+<!-- Footer -->
+<footer class="chan-footer">
+    <div class="container-footer">
+      <div class="cot-footer">
+        <img src="img/footer.png" alt="Mixivivu Logo" class="logo-footer" />
+        <p>Công ty TNHH Du Lịch và Dịch Vụ Mixivivu</p>
+        <p>Tầng 7, số nhà 25, ngõ 38 phố Yên Lãng, phường Láng Hạ, quận Đống Đa, TP. Hà Nội</p>
+        <p>Mã số doanh nghiệp: 0110376372</p>
+        <p>Hotline: <strong>0922222016</strong></p>
+        <p>Email: <a href="mailto:info@mixivivu.com">info@mixivivu.com</a></p>
+      </div>
+
+      <div class="cot-footer">
+        <h3>GIỚI THIỆU</h3>
+        <a href="chungtoi.html">Về chúng tôi</a>
+        <a href="dieukhoan.html">Điều khoản và điều kiện</a>
+        <a href="chinhsach.html">Chính sách riêng tư</a>
+        <a href="huongdan.html">Hướng dẫn sử dụng</a>
+        <a href="thanhtoan.html">Hình thức thanh toán</a>
+        <a href="lienhe.html">Liên hệ</a>
+      </div>
+
+      <div class="cot-footer">
+        <h3>ĐIỂM ĐẾN</h3>
+        <a href="#">Vịnh Hạ Long</a>
+        <a href="#">Vịnh Lan Hạ</a>
+        <a href="#">Đảo Cát Bà</a>
+      </div>
+
+      <div class="cot-footer">
+        <h3>DU THUYỀN</h3>
+        <a href="blog.html">Blog</a>
+        <a href="quydinh.html">Quy định chung và lưu ý</a>
+        <a href="faq.html">Câu hỏi thường gặp</a>
+      </div>
+    </div>
+
+    <div class="chan-footer-duoi">
+      <p>Bản quyền © 2024 Mixivivu.</p>
+      <img src="img/bocongthuong.png" alt="Bộ Công Thương" />
+    </div>
+  </footer>
+</body>
+<script>
+    // JS đơn giản: chỉ mở hoặc đóng phần trả lời khi bấm vào
+    document.querySelectorAll('.faq-question').forEach((btn) => {
+    btn.addEventListener('click', function () {
+    const parent = btn.closest('.faq-item');
+    parent.classList.toggle('open');
+    btn.setAttribute('aria-expanded', parent.classList.contains('open'));
+  });
+});
+  </script>
+</html>

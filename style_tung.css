@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.dieuhuong {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.hop-dieuhuong {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #6fdcdc;
+}
+
+.lienhe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.hotline {
+  font-weight: bold;
+  color: #003366;
+}
+
+.nut-lienhe {
+  background: #6fdcdc;
+  color: black;
+  border-radius: 20px;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nut-lienhe:hover {
+  background: #54c4c4;
+}
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 32px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: #eaeaea;
+  border-radius: 32px 32px 32px 32px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.video-wrapper::after {
+  content: 'THÊM VIDEO Ở ĐÂY';
+  position: absolute;
+  color: #888;
+  font-size: 1.4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.banner-box {
+  position: relative;
+  top: -60px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(30,50,90,0.09);
+  width: 900px;
+  margin: 0 auto;
+  padding: 40px 44px 32px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.banner-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #12213a;
+  text-align: center;
+}
+
+.banner-desc {
+  color: #656d7a;
+  font-size: 1.08rem;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.banner-form {
+  display: flex;
+  gap: 14px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group {
+  flex: 1 1 0%;
+  min-width: 170px;
+}
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 32px;
+  border: 1.5px solid #ecedf2;
+  background: #f5f5f5;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.input:focus {
+  border-color: #3ac7be;
+}
+.select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 32px;
+  border: 1.5px solid #ecedf2;
+  background: #f5f5f5;
+  font-size: 1rem;
+  appearance: none;
+  outline: none;
+  color: #222;
+  transition: border 0.2s;
+}
+.select:focus {
+  border-color: #3ac7be;
+}
+
+.search-btn {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 24px;
+  background: #3ac7be;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.search-btn:hover {
+  background: #2fa39c;
+}
+
+@media (max-width: 980px) {
+  .container, .banner-box, .video-wrapper {
+    width: 100%;
+    min-width: unset;
+    max-width: 98vw;
+  }
+  .banner-box {
+    padding: 28px 10px 20px 10px;
+  }
+}
+@media (max-width: 660px) {
+  .banner-form {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .banner-box {
+    top: -32px;
+    padding: 18px 2vw 16px 2vw;
+    border-radius: 12px;
+  }
+  .video-wrapper {
+    height: 180px;
+    border-radius: 18px;
+  }
+}
+  .intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .intro-left {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .intro-left h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #101010;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  .underline {
+    width: 60px;
+    height: 8px;
+    background: repeating-linear-gradient(
+      to right,
+      #20c997,
+      #20c997 8px,
+      transparent 8px,
+      transparent 16px
+    );
+    border-radius: 10px;
+  }
+  
+  .intro-right {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .intro-right p {
+    font-size: 17px;
+    color: #5f6368;
+    line-height: 1.8;
+  }
+  .hotel-list {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+/* Vùng chứa chung */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Tiêu đề của phần danh sách khách sạn */
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Bố cục dạng lưới cho các khách sạn */
+.hotel-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Một ô khách sạn */
+.hotel-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Hình ảnh khách sạn */
+.hotel-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Phần thông tin khách sạn */
+.hotel-info {
+  padding: 15px;
+}
+
+.hotel-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.location,
+.room-info {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+/* Giá và nút đặt phòng */
+.price-section {
+  display: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.current-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+}
+
+.old-price {
+  font-size: 13px;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.book-button {
+  padding: 8px 16px;
+  background-color: rgb(18, 147, 147);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background-color: darkcyan;
+}
+.destinations {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 28px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 280px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 16px;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin: 12px 0 10px;
+  color: #000;
+}
+
+.card button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 16px;
+  border-radius: 20px;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.card button:hover {
+  background-color: #f0f0f0;
+}
+/*Footer*/
+.chan-footer {
+  background: #0D1321;
+  color: #B0BEC5;
+  padding: 40px 20px;
+}
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cot-footer {
+  width: 22%;
+  min-width: 200px;
+  margin-bottom: 20px; /* Thêm margin dưới mỗi cột */
+}
+
+.cot-footer h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.cot-footer a {
+  display: block;
+  color: #B0BEC5;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.cot-footer a:hover {
+  color: #115380;
+}
+
+.logo-footer {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.chan-footer-duoi {
+  border-top: 1px solid #1C2331;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+.chan-footer-duoi img {
+  width: 120px;
+  margin-top: 10px;
+}
+  
+  
+
+  
+  
+  

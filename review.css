@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/*Thanh điều hướng*/
+.dieuhuong {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+.hop-dieuhuong {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+  
+.menu a:hover {
+    color: #6fdcdc;
+}
+  
+.lienhe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+  
+.hotline {
+    font-weight: bold;
+    color: #003366;
+}
+  
+.nut-lienhe {
+    background: #6fdcdc;
+    color: black;
+    border-radius: 20px;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: 400;
+}
+  
+.nut-lienhe:hover {
+    background: #54c4c4;
+}
+
+/* Content */
+
+.breadcrumb a {
+    color: #155248;
+    text-decoration: none;
+}
+
+.title {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.mobai {
+    margin-top: 20px;
+    font-style: italic; 
+    width: 80%;
+    color: #6c757d;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.noidung {
+    margin-left: 150px;
+    margin-top: 30px;
+    width: 80%;
+}
+
+/*Footer*/
+.chan-footer {
+    margin-top: 30px;
+    background: #0D1321;
+    color: #B0BEC5;
+    padding: 40px 20px;
+}
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cot-footer {
+    width: 22%;
+    min-width: 200px;
+    margin-bottom: 20px; /* Thêm margin dưới mỗi cột */
+}
+  
+.cot-footer h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+  
+.cot-footer a {
+    display: block;
+    color: #B0BEC5;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+  
+.cot-footer a:hover {
+    color: #115380;
+}
+  
+.logo-footer {
+    width: 150px;
+    margin-bottom: 15px;
+}
+  
+.chan-footer-duoi {
+    border-top: 1px solid #1C2331;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+  
+.chan-footer-duoi img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .noidung {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0; /* Xóa padding trái */
+        max-width: 97vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .noidung {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0; /* Xóa padding trái */
+        padding: 0 2vw;
+        max-width: 100vw;
+    }
+}

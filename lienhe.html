@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mixivivu</title>
+  <link rel="stylesheet" href="lienhe.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+/*Thanh điều hướng*/
+.dieuhuong {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+.hop-dieuhuong {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+  
+.menu a:hover {
+    color: #6fdcdc;
+}
+  
+.lienhe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+  
+.hotline {
+    font-weight: bold;
+    color: #003366;
+}
+  
+.nut-lienhe {
+    background: #6fdcdc;
+    color: black;
+    border-radius: 20px;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: 400;
+}
+  
+.nut-lienhe:hover {
+    background: #54c4c4;
+}
+  
+/*Form liên hệ*/
+.hop-form {
+    background: url('img/background.png') center/cover;
+    margin: 100px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+  
+.hop-form h2,
+.hop-form p {
+    text-align: center;
+}
+  
+.hop-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.hop-form p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #555;
+}
+  
+.form {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: auto;
+}
+  
+.nhom-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+  
+.nhom-form input,
+.nhom-form textarea {
+    flex: 1 1 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 14px;
+    resize: none;
+}
+  
+.nhom-form.nua {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.nua-form {
+    flex: 1;
+}
+  
+.nhan {
+    font-weight: 500;
+    margin-top: 15px;
+    display: block;
+}
+  
+button {
+    width: 100%;
+    padding: 14px;
+    background: #79d9db;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px; 
+}
+  
+button:hover {
+    background: #5ec3c5;
+}
+  
+/*Footer*/
+.chan-footer {
+    background: #0D1321;
+    color: #B0BEC5;
+    padding: 40px 20px;
+}
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cot-footer {
+    width: 22%;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+  
+.cot-footer h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+  
+.cot-footer a {
+    display: block;
+    color: #B0BEC5;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+  
+.cot-footer a:hover {
+    color: #115380;
+}
+  
+.logo-footer {
+    width: 150px;
+    margin-bottom: 15px;
+}
+  
+.chan-footer-duoi {
+    border-top: 1px solid #1C2331;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+  
+.chan-footer-duoi img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+</style>
+<body>
+
+  <!-- DIEU HUONG -->
+  <nav class="dieuhuong">
+    <div class="hop-dieuhuong">
+      <a class="logo" href="#"><img src="img/logo.png" alt="Logo Mixivivu" height="40"></a>
+      <ul class="menu">
+        <li><a href="tim-du-thuyen.html">Tìm du thuyền</a></li>
+      <li><a href="tim-ve-may-bay.html">Tim vé máy bay</a></li>
+      <li><a href="tim-khach-san.html">Tim khách sạn</a></li>
+      <li><a href="doanh-nghiep.html">Doanh nghiệp</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="lienhe">
+        <i class="fas fa-phone"></i>
+        <span class="hotline">Hotline: 0922222016</span>
+        <a href="lienhe.html" class="nut-lienhe">Liên hệ Mixivivu</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FORM LIEN HE -->
+  <div class="hop-form">
+    <h2>Khám phá Hạ Long thông qua du thuyền</h2>
+    <b><p>Khám phá Hạ Long qua du thuyền cùng MixiVivu - Hãy liên hệ ngay để trải nghiệm hành trình tuyệt vời</p></b>
+    <div class="form">
+      <form id="form-lienhe">
+        <div class="nhom-form">
+          <label class="nhan">Họ và tên *</label>
+          <input type="text" placeholder="Nhập họ và tên" required>
+        </div>
+        <div class="nhom-form nua">
+          <div class="nua-form">
+            <label class="nhan">Email *</label>
+            <input type="email" placeholder="Nhập email" required>
+          </div>
+          <div class="nua-form">
+            <label class="nhan">Số điện thoại *</label>
+            <input type="tel" placeholder="Nhập số điện thoại" required>
+          </div>
+        </div>
+        <div class="nhom-form">
+          <label class="nhan">Nội dung *</label>
+          <input placeholder="Nhập yêu cầu của bạn" required>
+        </div>
+        <button type="submit">Liên hệ với MixiVivu →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="chan-footer">
+    <div class="container-footer">
+      <div class="cot-footer">
+        <img src="img/footer.png" alt="Mixivivu Logo" class="logo-footer" />
+        <p>Công ty TNHH Du Lịch và Dịch Vụ Mixivivu</p>
+        <p>Tầng 7, số nhà 25, ngõ 38 phố Yên Lãng, phường Láng Hạ, quận Đống Đa, TP. Hà Nội</p>
+        <p>Mã số doanh nghiệp: 0110376372</p>
+        <p>Hotline: <strong>0922222016</strong></p>
+        <p>Email: <a href="mailto:info@mixivivu.com">info@mixivivu.com</a></p>
+      </div>
+
+      <div class="cot-footer">
+        <h3>GIỚI THIỆU</h3>
+        <a href="chungtoi.html">Về chúng tôi</a>
+        <a href="dieukhoan.html">Điều khoản và điều kiện</a>
+        <a href="chinhsach.html">Chính sách riêng tư</a>
+        <a href="huongdan.html">Hướng dẫn sử dụng</a>
+        <a href="thanhtoan.html">Hình thức thanh toán</a>
+        <a href="lienhe.html">Liên hệ</a>
+      </div>
+
+      <div class="cot-footer">
+        <h3>ĐIỂM ĐẾN</h3>
+        <a href="#">Vịnh Hạ Long</a>
+        <a href="#">Vịnh Lan Hạ</a>
+        <a href="#">Đảo Cát Bà</a>
+      </div>
+
+      <div class="cot-footer">
+        <h3>DU THUYỀN</h3>
+        <a href="blog.html">Blog</a>
+        <a href="quydinh.html">Quy định chung và lưu ý</a>
+        <a href="faq.html">Câu hỏi thường gặp</a>
+      </div>
+    </div>
+
+    <div class="chan-footer-duoi">
+      <img src="img/bocongthuong.png" alt="Bộ Công Thương" />
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("form-lienhe").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thông tin đã được gửi!Chúng tôi sẽ thông báo qua email của bạn.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>

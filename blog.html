@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mixivivu</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css" />
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Thanh điều hướng*/
+.dieuhuong {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.hop-dieuhuong {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #6fdcdc;
+}
+
+.lienhe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.hotline {
+  font-weight: bold;
+  color: #003366;
+}
+
+.nut-lienhe {
+  background: #6fdcdc;
+  color: black;
+  border-radius: 20px;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nut-lienhe:hover {
+  background: #54c4c4;
+}
+
+/*Blog*/
+.phan-hieu{
+  margin-left: 15%;
+}
+.tab-loc {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: #f7f8fa;
+  border-radius: 12px;
+  padding:  12px 18px;
+  margin: 30px 15% 28px 15%;
+  box-sizing: border-box;
+  box-shadow: none;
+  justify-content: flex-start;
+}
+.nut-loc {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 6px 20px;
+  border-radius: 9px;
+  background: none;
+  color: #48516b;
+  font-weight: 500;
+  transition: background 0.18s, color 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+  box-shadow: none;
+  position: relative;
+  margin-right: 0;
+}
+.nut-loc.active {
+  background: #fff;
+  color: #243139;
+  box-shadow: 0 2px 7px rgba(99,123,169,0.10);
+  font-weight: 600;
+  z-index: 2;
+}
+.nut-loc:hover:not(.active) {
+  color: #68bfb5;
+  background: #f0f5fa;
+}
+@media(max-width:700px){
+  .tab-loc{padding-left:6px;}
+  .nut-loc{padding:6px 10px;font-size:0.99rem;}
+}
+.container-noi-dung {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin: 0 auto 50px auto;
+  max-width: 1200px;
+}
+.item-loc {
+  width: 320px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(36,49,57,0.09);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.18s, transform 0.18s;
+}
+.item-loc:hover {
+  box-shadow: 0 10px 32px 0 rgba(104,191,181,0.10);
+}
+.item-loc img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.noi-dung-card {
+  padding: 18px 18px 10px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 1;
+}
+.noi-dung-card b a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color .17s;
+}
+.noi-dung-card b a:hover {
+  color: #68bfb5;
+}
+.noi-dung-card p {
+  color: #667;
+  font-size: 13.5px;
+  margin-bottom: 8px;
+}
+.bottom-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+.bottom-card span {
+  color: #8aafaf;
+  font-size: 13px;
+}
+.nut-xem {
+  padding: 5px 15px;
+  background: #68bfb5;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background 0.14s;
+  box-shadow: 0 1px 3px rgba(104,191,181,.06);
+}
+.nut-xem:hover {
+  background: #243139;
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .container-noi-dung {
+    gap: 18px;
+  }
+  .item-loc {
+    width: 95vw;
+    max-width: 400px;
+  }
+}
+
+/*Footer*/
+.chan-footer {
+  background: #0D1321;
+  color: #B0BEC5;
+  padding: 40px 20px;
+}
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.cot-footer {
+  width: 20%;
+  min-width: 200px;
+}
+.cot-footer h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.cot-footer a {
+  display: block;
+  color: #B0BEC5;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+.cot-footer a:hover {
+  color: #115380;
+}
+.logo-footer {
+  width: 150px;
+  margin-bottom: 15px;
+}
+.chan-footer-duoi {
+  border-top: 1px solid #1C2331;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+.chan-footer-duoi img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="dieuhuong">
+    <div class="hop-dieuhuong">
+      <a class="logo" href="#"><img src="img/logo.png" alt="Logo Mixivivu" height="40"></a>
+      <ul class="menu">
+        <li><a href="tim-du-thuyen.html">Tìm du thuyền</a></li>
+        <li><a href="tim-ve-may-bay.html">Tim vé máy bay</a></li>
+        <li><a href="tim-khach-san.html">Tim khách sạn</a></li>
+        <li><a href="doanh-nghiep.html">Doanh nghiệp</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="lienhe">
+        <i class="fas fa-phone"></i>
+        <span class="hotline">Hotline: 0922222016</span>
+        <a href="lienhe.html" class="nut-lienhe">Liên hệ Mixivivu</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="phan-hieu">
+    <h1 class="tieu-de-hero">Hạ Long: Khám phá Sự đặc sắc <br>và Cập nhật tin tức mới nhất</h1>
+    <label class="mo-ta-hero"><br> Hạ Long: Bí mật và Cuộc sống trong Vịnh - Khám phá và Cập nhật những tin tức hấp dẫn từ điểm đến tuyệt vời này.</label>
+  </div>
+
+  <!-- Filter Tabs -->
+  <div class="tab-loc" style="margin-right: 15%;">
+    <button class="nut-loc active" data-category="all">Tất cả</button>
+    <button class="nut-loc" data-category="dulich">Du lịch</button>
+    <button class="nut-loc" data-category="khachsan">Khách sạn</button>
+    <button class="nut-loc" data-category="duthuyen">Du thuyền</button>
+  </div>
+
+  <!-- Content -->
+  <div class="container-noi-dung">
+    <div class="item-loc dulich">
+      <img src="img/hungvuong.png" alt="Giỗ tổ Hùng Vương" />
+      <div class="noi-dung-card">
+        <b><a href="hungvuong.html">Giỗ tổ Hùng Vương - Nét đẹp văn hóa của người dân Việt Nam</a></b>
+        <p>Giỗ tổ Hùng Vương là lễ hội thể hiện nét đẹp văn hóa "uống nước nhớ nguồn" của người dân Việt.</p>
+        <div class="bottom-card">
+          <span>02/04/2025</span>
+          <a href="hungvuong.html" class="nut-xem">Xem chi tiết</a>
+        </div>
+      </div>
+    </div>
+    <div class="item-loc dulich">
+      <img src="img/baibien.png" alt="Tết Hàn thực" />
+      <div class="noi-dung-card">
+        <b><a href="baibien.html">Khám phá 5 bãi biển nổi bật tại Hội An cho mùa hè này</a></b>
+        <p>Hội An không chỉ thu hút du khách bởi vẻ đẹp cổ kính của những con phố rêu phong mà còn quyến rũ lòng...</p>
+        <div class="bottom-card">
+          <span>31/03/2025</span>
+          <a href="baibien.html" class="nut-xem">Xem chi tiết</a>
+        </div>
+      </div>
+    </div>
+    <div class="item-loc khachsan">
+      <img src="img/khachsan.png" alt="Khách sạn đẹp" />
+      <div class="noi-dung-card">
+        <b><a href="khachsan.html">Top khách sạn tốt nhất tại Hạ Long</a></b>
+        <p>Đà Lạt, với khung cảnh hữu tình và khí hậu tuyệt vời được thiên nhiên ban tặng khiến cho bất cứ du khách...</p>
+        <div class="bottom-card">
+          <span>30/03/2025</span>
+          <a href="khachsan.html" class="nut-xem">Xem chi tiết</a>
+        </div>
+      </div>
+    </div>
+    <div class="item-loc duthuyen">
+      <img src="img/duthuyen.png" alt="Du thuyền sang trọng" />
+      <div class="noi-dung-card">
+        <b><a href="duthuyen.html">Trải nghiệm du thuyền 5 sao tại Hạ Long</a></b>
+        <p>Những chuyến du thuyền cao cấp giúp bạn tận hưởng cảnh đẹp của vịnh Hạ Long.</p>
+        <div class="bottom-card">
+          <span>29/03/2025</span>
+          <a href="duthuyen.html" class="nut-xem">Xem chi tiết</a>
+        </div>
+      </div>
+    </div>
+    <div class="item-loc khachsan">
+      <img src="img/khachsan7.png" alt="Khách sạn đẹp" />
+      <div class="noi-dung-card">
+        <b><a href="khachsan1.html">Top 5 resort nổi tiếng ở Hạ Long</a></b>
+        <p>Nếu bạn chưa tìm được khu nghỉ dưỡng sang xịn tại Hạ Long, hãy để Mixi Vivu gợi ý giúp bạn 6 resort Hạ Long...</p>
+        <div class="bottom-card">
+          <span>01/03/2025</span>
+          <a href="khachsan1.html" class="nut-xem">Xem chi tiết</a>
+        </div>
+      </div>
+    </div>
+    <div class="item-loc duthuyen">
+      <img src="img/duthuyen7.png" alt="Du thuyền sang trọng" />
+      <div class="noi-dung-card">
+        <b><a href="duthuyen1.html">Du thuyền có BỂ BƠI - BỂ SỤC hot nhất Vịnh Hạ Long</a></b>
+        <p>Bể bơi trên Du thuyền là một tiện ích nghỉ dưỡng sang trọng được khách hàng đánh giá cao trong chuyến đi...</p>
+        <div class="bottom-card">
+          <span>02/03/2025</span>
+          <a href="duthuyen1.html" class="nut-xem">Xem chi tiết</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="chan-footer">
+    <div class="container-footer">
+      <div class="cot-footer">
+        <img src="img/footer.png" alt="Mixivivu Logo" class="logo-footer" />
+        <p>Công ty TNHH Du Lịch và Dịch Vụ Mixivivu</p>
+        <p>Tầng 7, số nhà 25, ngõ 38 phố Yên Lãng, phường Láng Hạ, quận Đống Đa, TP. Hà Nội</p>
+        <p>Mã số doanh nghiệp: 0110376372</p>
+        <p>Hotline: <strong>0922222016</strong></p>
+        <p>Email: <a href="mailto:info@mixivivu.com">info@mixivivu.com</a></p>
+      </div>
+
+      <div class="cot-footer">
+        <h3>GIỚI THIỆU</h3>
+        <a href="chungtoi.html">Về chúng tôi</a>
+        <a href="dieukhoan.html">Điều khoản và điều kiện</a>
+        <a href="chinhsach.html">Chính sách riêng tư</a>
+        <a href="huongdan.html">Hướng dẫn sử dụng</a>
+        <a href="thanhtoan.html">Hình thức thanh toán</a>
+        <a href="lienhe.html">Liên hệ</a>
+      </div>
+
+      <div class="cot-footer">
+        <h3>ĐIỂM ĐẾN</h3>
+        <a href="#">Vịnh Hạ Long</a>
+        <a href="#">Vịnh Lan Hạ</a>
+        <a href="#">Đảo Cát Bà</a>
+      </div>
+
+      <div class="cot-footer">
+        <h3>DU THUYỀN</h3>
+        <a href="blog.html">Blog</a>
+        <a href="quydinh.html">Quy định chung và lưu ý</a>
+        <a href="faq.html">Câu hỏi thường gặp</a>
+      </div>
+    </div>
+
+    <div class="chan-footer-duoi">
+      <img src="img/bocongthuong.png" alt="Bộ Công Thương" />
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var nutt = document.querySelectorAll(".nut-loc");
+    var tabs = document.querySelectorAll(".item-loc");
+
+    nutt.forEach(button => {
+        button.addEventListener("click", () => {
+            nutt.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            var loai = button.getAttribute("data-category");
+            console.log("Đã chọn:", loai);
+
+            tabs.forEach(item => {
+                if (loai === "all" || item.classList.contains(loai)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    });
+});
+  </script>
+</body>
+</html>

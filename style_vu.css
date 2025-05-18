@@ -1,0 +1,1664 @@
+body
+{
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+* 
+{
+    box-sizing: border-box;
+}
+
+body.tim-du-thuyen .navbar ul li:nth-child(1) a{
+    text-decoration: underline;
+    text-decoration-color: #77dada !important;
+}
+body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
+    text-decoration: underline;
+    text-decoration-color: #77dada !important;
+}
+
+.navbar
+{
+    width: 100%;
+    height: 80px;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.menu-icon 
+{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 24px;
+    cursor: pointer;
+    position: static;
+    margin-left: 10px;
+}
+
+.menu-icon div 
+{
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+.logo-web
+{
+    width: 150px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.navbar ul
+{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 100px;
+}
+
+.hotline-text:hover {
+  cursor: pointer;
+}
+
+.navbar ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.navbar ul li a:hover
+{
+    color: #77dada;
+}
+
+#btn-contact
+{
+    width: 130px;
+    height: 40px;
+    background-color: #77dada;
+    color: #0e4f4f;
+    border-radius: 30px;
+    border: 1px solid #77dada;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-contact:hover
+{
+    background-color: #0e4f4f;
+    color:white;
+    cursor: pointer;
+}
+
+.section-1-index
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 5000px;
+}
+
+.video-banner
+{
+    position: relative;
+    width: 90%;
+    border-radius: 24px;
+    overflow: hidden; 
+    padding-top: 70px;
+}
+
+.video-banner video
+{
+    width: 100%;
+    height: 800px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.menu-search
+{
+    margin-top: -150px;
+    align-self: start;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-search .container
+{
+    width: 100%;
+    max-width: 1200px;
+    max-height: 5000px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.menu-search .container h1
+{
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+.menu-search .container p
+{
+    font-size: 20px;
+}
+
+.dropdown-content
+{
+    position: absolute;
+    top: 95%;
+    display: none;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    min-width: 250px;
+    text-align: left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+}
+
+.dropdown-content a:hover
+{
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+.form-search
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.intro
+{
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-height: 5000px;
+    padding-bottom: 20px;
+}
+
+.intro .cell1
+{
+    width: 25%;
+    height: 100%;
+    font-size: 19px;
+    justify-content: center;
+    display: flex;
+    justify-items: center;
+}
+.intro .cell2
+{
+    width: 30%;
+    height: 100%;
+    margin-left: 20%;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+.list-boat, .list-address
+{
+    width: 100%;
+    max-height: 5000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+    padding: 10px 10px;
+}
+
+.card-info
+{
+    width: 400px;
+    max-height: 600px;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 20px 20px;
+}
+
+.card-info:hover
+{
+    cursor: pointer;
+}
+
+.card-info img 
+{
+    display: block;        
+    width: 100%;            
+    height: 250px;          
+    object-fit: cover;      
+    border-radius: 20px;  
+}
+
+.tour-address
+{
+    width: fit-content;
+    display: inline-block;
+    background-color: #f2f4f7;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.card-title
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+.card-des
+{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.card-footer
+{
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    gap: 80px;
+}
+.card-hr
+{
+    border: none;        
+    border-top: 1px solid #ccc;  
+    margin: 15px 0;       
+    width: 100%;
+    display: block;   
+}
+.card-submit {
+    width: 110px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #77dada;
+    color: #0e4f4f;
+    border: 1px solid #77dada;
+    font-size: 15px;
+    transition: background 0.2s, color 0.2s;
+}
+.card-submit:hover {
+    background-color: #0e4f4f;
+    color: white;
+    cursor: pointer;
+}
+
+#view-all-boat
+{ 
+    display: block; 
+    margin: 30px auto;
+    width: 220px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+#view-all-boat:hover
+{
+    cursor: pointer;
+    background-color: #eaecf0;
+}
+
+.feedback
+{
+    width: 100%;
+    max-height: 5000px;
+    background: #f3ffff url(img/section-background.png);
+    background-repeat: repeat;
+    justify-items: center;
+    padding: 10px 10px;
+}
+
+.fb-row1
+{
+    width: 100%;
+    max-height: 5000px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.fb-cell1
+{
+    width: 30%;
+    height: 100%;
+}
+
+.fb-cell2
+{
+    width: 30%;
+    height: 100%;
+    margin-left: 20%;
+    font-size: 17px;
+}
+
+.fb-row2
+{
+    width: 80%;
+    max-height: 5000px;
+    display: flex;
+}
+
+.feedback-title
+{
+    font-size: 19px;
+}
+
+.feedback-content
+{
+    font-size: 19px;
+}
+
+.feedback-customer
+{
+    font-size: 18px;
+}
+
+.list-customer-feedback
+{
+    padding-top: 50px;
+}
+
+.list-customer-feedback ul
+{
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+.list-customer-feedback ul li a
+{
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: fff8f8;
+}
+
+.list-customer-feedback ul li a:hover
+{
+    cursor: pointer;
+    background-color: #eaecf0;
+}
+
+.intro-2
+{
+    width: 100%;
+    height: 200px;
+    max-height: 5000px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.intro-2 h1
+{
+    text-align: center;
+}
+
+.intro-2 p
+{
+    width: 460px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card-address:hover
+{
+    cursor: pointer;
+}
+
+
+.card-address-footer button
+{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.card-address-footer button:hover
+{
+    cursor: pointer;
+    background-color: #f2f4f7;
+}
+
+
+.partner
+{
+    width: 100%;
+    max-height: 5000px;
+    background: #f2f4f7 url(img/section-background.png);
+    box-sizing: border-box;
+    margin-top: 80px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+.partner-row2 ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.partner-row2 img
+{
+    width: 155px;
+    height: 50px;
+}
+
+.intro-address-2
+{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.intro-address-2 .cell1
+{
+    width: 32%;
+    height: 150px;
+}
+
+.intro-address-2 .cell2
+{
+    width: 32%;
+    height: 150px;
+    font-size: 18px;
+}
+
+.card-address-content .card-address-title
+{
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.card-address-content .card-address-des, .card-address-content p
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+    height: 60px;
+    margin-left: 5%;
+}
+
+
+/*footer*/
+.chan-footer {
+    background: #0D1321;
+    color: #B0BEC5;
+    padding: 40px 20px;
+}
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cot-footer {
+    width: 22%;
+    min-width: 200px;
+    margin-bottom: 20px; /* Thêm margin dưới mỗi cột */
+}
+  
+.cot-footer h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+  
+.cot-footer a {
+    display: block;
+    color: #B0BEC5;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+  
+.cot-footer a:hover {
+    color: #115380;
+}
+  
+.logo-footer {
+    width: 150px;
+    margin-bottom: 15px;
+}
+/*tim-du-thuyen*/
+
+.panel-duthuyen
+{
+    width: 100%;
+    max-height: 5000px;
+    background: #f2f4f7 url(img/section-background.png);
+    padding-bottom: 50px;
+}
+
+.menu-search-2 
+{
+    padding-top: 200px;
+}   
+.menu-search-2 .container
+{
+    max-width: 1200px;
+    max-height: 5000px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-search-boat
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.menu-search-2 .container h1
+{
+    width: 100%;
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+.menu-search-2 .container p
+{
+    width: 100%;
+    font-size: 20px;
+}
+
+
+.menu-search-2 .form-search-boat .dropdown .dropdown-content
+{
+    position: absolute;
+    top: 110%;
+    display: none;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    min-width: 250px;
+    text-align: left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-search-2 .form-search-boat .dropdown .dropdown-content .dropdown-content a
+{
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+}
+
+.menu-search-2 .form-search-boat .dropdown .dropdown-content a:hover
+{
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+.input-search
+{
+    width: 45%;
+}
+
+.dropdown
+{
+    width: 15%;
+    position: relative;
+}
+.button-form
+{
+    width: 15%;
+}
+
+#name_boat
+{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 15px;
+    padding: 20px 0 20px 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#name_boat:focus
+{
+    border: 1px solid #77dada;
+    box-shadow: 0 0 10px rgba(119, 218, 218, 0.8), 0 0 20px rgba(119, 218, 218, 0.5);
+}
+
+#address, #cost
+{
+    width: 100%;
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px 0 20px 30px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.menu-search-2 .form-search-boat #address:focus,
+.menu-search-2 .form-search-boat #cost:focus
+{
+    border: 1px solid #77dada;
+    box-shadow: 0 0 10px rgba(119, 218, 218, 0.8), 0 0 20px rgba(119, 218, 218, 0.5);
+}
+
+#btn-search
+{
+    width: 100%;
+    padding: 20px 0 20px;
+    background-color: #77dada;
+    color:#0e4f4f;
+    border-radius: 30px;
+    border: 1px solid #77dada;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#btn-search:hover
+{
+    background-color: #0e4f4f;
+    color:white;
+    cursor: pointer;
+}
+
+.panel-duthuyen .section-1
+{
+    width: 100%;
+    max-height: 5000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 15%;
+    padding-bottom: 40px;   
+}
+
+.panel-duthuyen .section-1 #filter-result
+{
+    font-size: 15px;
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+
+.panel-duthuyen .section-1 #filter-result:hover
+{
+    cursor: pointer;
+    background-color: #eaecf0;
+}
+
+.panel-duthuyen .section-2
+{
+    width: 81%;
+    max-height: 5000px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.panel-duthuyen .section-2 .cell1
+{
+    width: 25%;
+    height: 100%;
+}
+
+.panel-duthuyen .section-2 .cell2
+{
+    margin-left: 3%;
+    width: 72%;
+    height: 100%;
+    justify-content: center;
+}
+
+.panel-filter 
+{
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.section-filter1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reset-filter:hover {
+    cursor: pointer;
+    color: #77dada;
+}
+
+.section-filter2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-filter2-1,
+.section-filter2-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-title {
+    margin: 5;
+    font-size: 18px;
+}
+
+.checkbox-result ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.checkbox-result li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+.checkbox-result input:hover,
+.checkbox-result li label:hover{
+    cursor: pointer;
+}
+.section-2 .cell2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.card-info-boat 
+{
+    display: flex;
+    width: 100%;
+    max-height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.card-boat-img {
+    max-width: 400px;
+    height: 100%;
+}
+
+.card-info-boat img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.rating {
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 20px;
+    position: absolute;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.card-info-boat .card-address {
+    display: inline-block;
+    background-color: #f2f4f7;
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: -10px;
+}
+
+.card-more-info ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+.card-more-info ul li {
+    padding: 5px 8px;
+    border-radius: 20px;
+    background-color: #f2f4f7;
+    font-size: 12px;
+}
+
+/* Điều chỉnh .card-content và .card-cost để .card-cost nằm dưới cùng */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-cost {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Đẩy .card-cost xuống dưới cùng của .card-content */
+}
+
+.section-2 .cell2 .row:hover {
+    cursor: pointer;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.pagination-info {
+  white-space: nowrap;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 4px;
+}
+
+.pagination .page-item {
+  display: inline-block;
+}
+
+.pagination .page-item a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pagination .page-item a:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination .page-item.active a {
+  background-color: #c4c4c7;
+  cursor: default;
+}
+
+/*tim-ve-may-bay*/
+
+
+.menu-search-flight {
+    margin-top: -150px;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-search-flight .container {
+    position: relative;
+    width: 1100px;
+    max-height: 5000px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.menu-search-flight .container h1 {
+    padding-top: 20px;
+    font-size: 35px;
+    color: #333;
+}
+
+.menu-search-flight .container p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.flight-option-group {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.flight-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.flight-option.right-aligned {
+    margin-left: auto;
+}
+
+.flight-option input[type="radio"],
+.flight-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.flight-option label {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-search-flight {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 40px;
+    margin: 0;
+}
+
+.input-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.flight-input-group {
+    position: relative;
+    flex: 1;
+}
+
+.flight-input-label {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+.flight-input {
+    width: 100%;
+    font-size: 15px;
+    padding: 30px 15px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.flight-input:focus {
+    border: 1px solid #77dada;
+    box-shadow: 0 0 10px rgba(119, 218, 218, 0.8), 0 0 20px rgba(119, 218, 218, 0.5);
+}
+
+.flight-btn-search {
+    max-width: 150px;
+    padding: 20px 10px;
+    background-color: #77dada;
+    color: #0e4f4f;
+    border-radius: 30px;
+    border: 1px solid #77dada;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.flight-btn-search:hover {
+    background-color: #0e4f4f;
+    color: white;
+}
+
+.flight-passenger-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    gap: 20px;
+}
+
+.flight-input.passenger {
+    width: 100%;
+}
+
+.feedback-flight
+{
+    width: 100%;
+    max-height: 5000px;
+    background-repeat: repeat;
+    justify-items: center;
+    padding-bottom: 40px;
+}
+
+/* Điện thoại nhỏ */
+@media (max-width: 575.98px) {
+    .navbar ul,
+    .logo-web,
+    .hotline-text 
+    {
+        display: none;
+    }
+    .navbar
+    {
+        justify-items: flex-end;
+        padding-right: 100px;
+    }
+    .navbar-info{
+        margin-left: auto;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    .bo-loc
+    {
+        display: block !important;
+    }
+    
+    .section-2 .cell1
+    {
+        display: none;
+    }
+     .result-search
+    {
+        text-align: center;
+        width: 100% !important;
+    }
+    .section-2 .cell2
+    {
+        width: 100% !important;
+    }
+    .card-info-boat {
+        width: 400px;
+        max-height: 600px;
+        display: block;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        padding: 20px 20px;
+    }
+
+    .card-boat-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card-info-boat img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .card-info-boat .card-address {
+        display: inline-block;
+        background-color: #f2f4f7;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    .card-info-boat .card-title {
+        margin-top: -5px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .card-info-boat .card-des {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .card-cost {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-items: center;
+        text-align: center;
+        gap: 80px;
+        margin-top: 10px;
+    }
+
+    .card-more-info, .card-hr {
+        display: none;
+    }
+    .input-search
+    {
+        width: 90%;
+    }
+
+    .dropdown
+    {
+        width: 90%;
+        position: relative;
+    }
+    .button-form
+    {
+        width: 90%;
+    }
+    .panel-duthuyen .section-1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .panel-duthuyen .section-1 .dropdown {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .panel-duthuyen .section-1 #filter-result {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .pagination-info, #prev-page, #next-page {
+        display: none;
+    }
+
+    .form-search-flight {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 0 8px !important;
+    }
+    .input-row {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+    .flight-input-group,
+    .flight-passenger-inputs > .flight-input-group,
+    .flight-input.passenger,
+    .flight-btn-search {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+    .flight-passenger-inputs {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }   
+
+}
+
+/* Điện thoại */
+@media (max-width: 767.98px) {
+   .navbar ul,
+    .logo-web,
+    .hotline-text 
+    {
+        display: none;
+    }
+    .navbar{
+        justify-items: flex-end;
+        padding-right: 100px;
+    }
+    .navbar-info{
+        margin-left: auto;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    .bo-loc
+    {
+        display: block !important;
+    }
+    
+    .section-2 .cell1
+    {
+        display: none;
+    }
+     .result-search
+    {
+        text-align: center;
+        width: 100% !important;
+    }
+    
+    .section-2 .cell2
+    {
+        width: 100% !important;
+    }
+    .card-info-boat {
+        width: 400px;
+        max-height: 600px;
+        display: block;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        padding: 20px 20px;
+    }
+
+    .card-boat-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card-info-boat img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .card-info-boat .card-address {
+        display: inline-block;
+        background-color: #f2f4f7;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    .card-info-boat .card-title {
+        margin-top: -5px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .card-info-boat .card-des {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .card-cost {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-items: center;
+        text-align: center;
+        gap: 80px;
+        margin-top: 10px;
+    }
+
+    .card-more-info, .card-hr {
+        display: none;
+    }
+    .input-search
+    {
+        width: 90%;
+    }
+
+    .dropdown
+    {
+        width: 90%;
+        position: relative;
+    }
+    .button-form
+    {
+        width: 90%;
+    }
+    .panel-duthuyen .section-1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .panel-duthuyen .section-1 .dropdown {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .panel-duthuyen .section-1 #filter-result {
+        width: 100%;
+        max-width: 350px;
+    }
+    .form-search-flight {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 0 8px !important;
+    }
+    .input-row {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+    .flight-input-group,
+    .flight-passenger-inputs > .flight-input-group,
+    .flight-input.passenger,
+    .flight-btn-search {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+    .flight-passenger-inputs {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar ul,
+    .logo-web,
+    .hotline-text 
+    {
+        display: none;
+    }
+    .navbar{
+        justify-items: flex-end;
+        padding-right: 100px;
+    }
+    .navbar-info{
+        margin-left: auto;
+    }
+    
+    .menu-icon 
+    {
+        display: flex;
+    }
+
+    .section-2 .cell1
+    {
+        display: none;
+    }
+    .bo-loc
+    {
+        display: block !important;
+    }
+    .result-search
+    {
+        text-align: center;
+        width: 100% !important;
+    }
+    
+    .section-2 .cell2
+    {
+        width: 100% !important;
+    }
+    .card-info-boat {
+        width: 400px;
+        max-height: 600px;
+        display: block;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        padding: 20px 20px;
+    }
+
+    .card-boat-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card-info-boat img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .card-info-boat .card-address {
+        display: inline-block;
+        background-color: #f2f4f7;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    .card-info-boat .card-title {
+        margin-top: -5px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .card-info-boat .card-des {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .card-cost {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-items: center;
+        text-align: center;
+        gap: 80px;
+        margin-top: 10px;
+    }
+
+    .card-more-info, .card-hr {
+        display: none;
+    }
+    
+    .input-search
+    {
+        width: 90%;
+    }
+
+    .dropdown
+    {
+        width: 90%;
+        position: relative;
+    }
+    .button-form
+    {
+        width: 90%;
+    }
+
+    .panel-duthuyen .section-1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .panel-duthuyen .section-1 .dropdown {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .panel-duthuyen .section-1 #filter-result {
+        width: 100%;
+        max-width: 350px;
+    }
+
+     .form-search-flight {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 0 8px !important;
+    }
+    .input-row {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+    .flight-input-group,
+    .flight-passenger-inputs .flight-input-group,
+    .flight-input.passenger,
+    .flight-btn-search {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+    .flight-passenger-inputs {
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+}
+
+/* Laptop */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar ul,
+    .logo-web,
+    .hotline-text 
+    {
+        display: none;
+    }
+    .navbar{
+        justify-items: flex-end;
+        padding-right: 100px;
+    }
+    .navbar-info{
+        margin-left: auto;
+    }
+    .menu-icon 
+    {
+        display: flex;
+    }
+    
+    .section-2 .cell1
+    {
+        display: none;
+    }
+     .bo-loc
+    {
+        display: block !important;
+    }
+    .result-search
+    {
+        text-align: center;
+        width: 100% !important;
+    }
+    .section-2 .cell2
+    {
+        width: 100% !important;
+    }
+    .card-info-boat {
+        width: 400px;
+        max-height: 600px;
+        display: block;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        padding: 20px 20px;
+    }
+
+    .card-boat-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card-info-boat img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .card-info-boat .card-address {
+        display: inline-block;
+        background-color: #f2f4f7;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    .card-info-boat .card-title {
+        margin-top: -5px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .card-info-boat .card-des {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .card-cost {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-items: center;
+        text-align: center;
+        gap: 80px;
+        margin-top: 10px;
+    }
+
+    .card-more-info, .card-hr {
+        display: none;
+    }
+
+}
