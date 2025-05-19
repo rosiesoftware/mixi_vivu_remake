@@ -122,9 +122,10 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 
 .video-banner
 {
-    position: relative;
     width: 90%;
-    border-radius: 24px;
+    max-width: 1500px;
+    max-height: 5000px;
+    border-radius: 24px;    
     overflow: hidden; 
     padding-top: 70px;
 }
@@ -149,8 +150,8 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 
 .menu-search .container
 {
-    width: 100%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1100px;
     max-height: 5000px;
     background-color: white;
     border-radius: 30px;
@@ -210,31 +211,42 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     gap: 20px;
     padding-bottom: 20px;
 }
+
+.section-2
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .intro
 {
     margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-items: center;
     width: 100%;
+    max-width: 1500px;
     max-height: 5000px;
     padding-bottom: 20px;
+    gap: 20%;
 }
 
 .intro .cell1
 {
-    width: 25%;
+    width: 30%;
     height: 100%;
     font-size: 19px;
     justify-content: center;
     display: flex;
     justify-items: center;
+    align-items: center;
 }
 .intro .cell2
 {
     width: 30%;
     height: 100%;
-    margin-left: 20%;
     margin-top: 10px;
     font-size: 18px;
 }
@@ -243,6 +255,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 .list-boat, .list-address
 {
     width: 100%;
+    max-width: 1500px;
     max-height: 5000px;
     display: flex;
     flex-wrap: wrap;
@@ -261,6 +274,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     border-radius: 20px;
     border: 1px solid #ccc;
     padding: 20px 20px;
+    background-color: white;
 }
 
 .card-info:hover
@@ -348,19 +362,22 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     background-color: #eaecf0;
 }
 
+
 .feedback
 {
     width: 100%;
     max-height: 5000px;
     background: #f3ffff url(img/section-background.png);
     background-repeat: repeat;
-    justify-items: center;
+    justify-content: center;
     padding: 10px 10px;
 }
 
 .fb-row1
 {
+    margin: 0 auto;
     width: 100%;
+    max-width: 1500px;
     max-height: 5000px;
     display: flex;
     justify-items: center;
@@ -384,9 +401,11 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 
 .fb-row2
 {
-    width: 80%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
     max-height: 5000px;
-    display: flex;
+    padding: 40px 0 40px 0;
 }
 
 .feedback-title
@@ -406,11 +425,13 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 
 .list-customer-feedback
 {
-    padding-top: 50px;
+    padding: 0;
 }
 
 .list-customer-feedback ul
 {
+    padding: 0;
+    padding-top: 50px;
     list-style: none;
     flex-wrap: wrap;
     display: flex;
@@ -421,7 +442,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     padding: 8px 16px;
     border-radius: 20px;
     border: 1px solid #ccc;
-    background-color: fff8f8;
+    background-color: #fff8f8;
 }
 
 .list-customer-feedback ul li a:hover
@@ -486,6 +507,13 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     justify-items: center;
     align-items: center;
     padding: 20px;
+}
+.partner-row2
+{
+    width: 100%;
+    max-width: 1200px;
+    max-height: 5000px;
+    padding: 40px 0 40px 0;
 }
 .partner-row2 ul
 {
@@ -597,10 +625,12 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 
 .menu-search-2 
 {
+    width: 100%;
     padding-top: 200px;
 }   
 .menu-search-2 .container
 {
+    width: 90%;
     max-width: 1200px;
     max-height: 5000px;
     margin: 50px auto;
@@ -611,6 +641,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    padding: 0px 20px 0 20px;
 }
 
 .form-search-boat
@@ -739,14 +770,16 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 
 .panel-duthuyen .section-1
 {
+    margin: 0 auto;
     width: 100%;
+    max-width: 1200px;
     max-height: 5000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    gap: 15%;
+    gap: 200px;
     padding-bottom: 40px;   
 }
 
@@ -770,12 +803,14 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 
 .panel-duthuyen .section-2
 {
-    width: 81%;
+    width: 90%;
+    max-width: 1200px;
     max-height: 5000px;
     display: flex;
     justify-items: center;
     justify-content: center;
     margin: 0 auto;
+    
 }
 
 .panel-duthuyen .section-2 .cell1
@@ -849,7 +884,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 .checkbox-result li label:hover{
     cursor: pointer;
 }
-.section-2 .cell2 {
+.panel-duthuyen .section-2 .cell2 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -932,7 +967,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     margin-top: auto; /* Đẩy .card-cost xuống dưới cùng của .card-content */
 }
 
-.section-2 .cell2 .row:hover {
+.panel-duthuyen .section-2 .cell2 .row:hover {
     cursor: pointer;
 }
 
@@ -942,7 +977,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
   gap: 20px;
   font-family: sans-serif;
   font-size: 15px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .pagination-info {
@@ -992,14 +1027,15 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 
 .menu-search-flight .container {
     position: relative;
-    width: 1100px;
+    width: 90%;
     max-height: 5000px;
     background-color: white;
     border-radius: 30px;
     border: 1px solid #ccc;
     text-align: center;
-    padding: 20px;
+    padding: 20px 10px 20px 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-sizing: border-box;
 }
 
 .menu-search-flight .container h1 {
@@ -1120,7 +1156,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 
 .feedback-flight
 {
-    width: 100%;
+    margin: 0 auto;
     max-height: 5000px;
     background-repeat: repeat;
     justify-items: center;
@@ -1146,12 +1182,22 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     .menu-icon {
         display: flex;
     }
+
+    .menu-search, .menu-search-flight
+    {
+        margin-top: -780px;
+    }
+    .menu-search .container
+    {
+        width: 90%;
+    }
+
     .bo-loc
     {
         display: block !important;
     }
     
-    .section-2 .cell1
+    .panel-duthuyen .section-2 .cell1
     {
         display: none;
     }
@@ -1160,7 +1206,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
         text-align: center;
         width: 100% !important;
     }
-    .section-2 .cell2
+    .panel-duthuyen .section-2 .cell2
     {
         width: 100% !important;
     }
@@ -1234,7 +1280,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     .panel-duthuyen .section-1 {
         flex-direction: column;
         align-items: center;
-        gap: 16px;
+        gap: 10px;
     }
     .panel-duthuyen .section-1 .dropdown {
         width: 90%;
@@ -1295,12 +1341,22 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     .menu-icon {
         display: flex;
     }
+
+    .menu-search, .menu-search-flight
+    {
+        margin-top: -780px;
+    }
+    .menu-search .container
+    {
+        width: 90%;
+    }
+
     .bo-loc
     {
         display: block !important;
     }
     
-    .section-2 .cell1
+    .panel-duthuyen  .section-2 .cell1
     {
         display: none;
     }
@@ -1310,7 +1366,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
         width: 100% !important;
     }
     
-    .section-2 .cell2
+     .panel-duthuyen .section-2 .cell2
     {
         width: 100% !important;
     }
@@ -1384,7 +1440,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     .panel-duthuyen .section-1 {
         flex-direction: column;
         align-items: center;
-        gap: 16px;
+        gap: 10px;
     }
     .panel-duthuyen .section-1 .dropdown {
         width: 90%;
@@ -1442,10 +1498,22 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
         display: flex;
     }
 
-    .section-2 .cell1
+    /*form-search*/
+    .menu-search, .menu-search-flight
+    {
+        margin-top: -780px;
+    }
+    .menu-search .container
+    {
+        width: 90%;
+    }
+
+
+    .panel-duthuyen .section-2 .cell1
     {
         display: none;
     }
+
     .bo-loc
     {
         display: block !important;
@@ -1456,7 +1524,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
         width: 100% !important;
     }
     
-    .section-2 .cell2
+     .panel-duthuyen .section-2 .cell2
     {
         width: 100% !important;
     }
@@ -1532,7 +1600,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
     .panel-duthuyen .section-1 {
         flex-direction: column;
         align-items: center;
-        gap: 16px;
+        gap: 10px;
     }
     .panel-duthuyen .section-1 .dropdown {
         width: 90%;
@@ -1572,27 +1640,14 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
 
 /* Laptop */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .navbar ul,
-    .logo-web,
-    .hotline-text 
-    {
-        display: none;
-    }
-    .navbar{
-        justify-items: flex-end;
-        padding-right: 100px;
-    }
-    .navbar-info{
-        margin-left: auto;
-    }
-    .menu-icon 
-    {
-        display: flex;
-    }
     
-    .section-2 .cell1
+     .panel-duthuyen .section-2 .cell1
     {
         display: none;
+    }
+    .panel-duthuyen .section-1
+    {
+        gap: 10px !important;
     }
      .bo-loc
     {
@@ -1603,7 +1658,7 @@ body.tim-ve-may-bay .navbar ul li:nth-child(2) a{
         text-align: center;
         width: 100% !important;
     }
-    .section-2 .cell2
+     .panel-duthuyen .section-2 .cell2
     {
         width: 100% !important;
     }

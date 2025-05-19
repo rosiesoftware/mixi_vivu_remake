@@ -22,7 +22,7 @@
             <div>
                 <b class="hotline-text">Hotline: 0912345678</b>
             </div>
-            <a id="btn-contact" href="lien-he.html">Liên hệ Mixivivu</a>
+            <a id="btn-contact" href="lienhe.html">Liên hệ Mixivivu</a>
             <div class="menu-icon" onclick="showMenu()">
                 <div></div>
                 <div></div>
@@ -35,68 +35,68 @@
             <video src="img/Mixivivumaybay.mp4" autoplay loop muted></video>
             <form action="#">
                 <div class="menu-search-flight">
-                <div class="container">
-                    <h1>Mở cánh cửa khám phá cùng Mixivivu</h1>
-                    <p>Mixivivu - Đặt chân lên đỉnh mây với một bước nhảy</p>
-                    
-                    <div class="flight-option-group">
-                        <div class="flight-option">
-                            <input type="radio" id="mot-chieu" name="flight-type" onclick="showKhuHoi()" checked>
-                            <label for="mot-chieu">Một chiều</label>
-                        </div>
-                        <div class="flight-option">
-                            <input type="radio" id="khu-hoi" name="flight-type" onclick="showKhuHoi()">
-                            <label for="khu-hoi">Khứ hồi</label>
-                        </div>
-                        <div class="flight-option" style="margin-left: auto;">
-                            <input type="checkbox" id="ve-re-nhat-thang" name="cheapest-month">
-                            <label for="ve-re-nhat-thang">Vé rẻ nhất tháng</label>
-                        </div>
-                    </div>
-                    
-                    <div class="form-search-flight">
-                        <div class="input-row">
-                            <div class="flight-input-group">
-                                <label class="flight-input-label" for="diem-di">Điểm đi</label>
-                                <input type="text" id="diem-di" class="flight-input" placeholder="Vui lòng nhập điểm đi">
+                    <div class="container">
+                        <h1>Mở cánh cửa khám phá cùng Mixivivu</h1>
+                        <p>Mixivivu - Đặt chân lên đỉnh mây với một bước nhảy</p>
+                        
+                        <div class="flight-option-group">
+                            <div class="flight-option">
+                                <input type="radio" id="mot-chieu" name="flight-type" onclick="showKhuHoi()" checked>
+                                <label for="mot-chieu">Một chiều</label>
                             </div>
-                            
-                            <div class="flight-input-group">
-                                <label class="flight-input-label" for="diem-den">Điểm đến</label>
-                                <input type="text" id="diem-den" class="flight-input" placeholder="Vui lòng nhập điểm đến">
+                            <div class="flight-option">
+                                <input type="radio" id="khu-hoi" name="flight-type" onclick="showKhuHoi()">
+                                <label for="khu-hoi">Khứ hồi</label>
                             </div>
-                        </div>
-                        <div class="input-row">
-                            <div class="flight-input-group">
-                                <label class="flight-input-label" for="ngay-di">Ngày đi</label>
-                                <input type="date" id="ngay-di" class="flight-input" value="17/05/2025">
-                            </div>
-                            <div class="flight-input-group">
-                                <label class="flight-input-label" for="ngay-ve" style="display: none;">Ngày về</label>
-                                <input type="date" id="ngay-ve" class="flight-input" value="17/05/2025" style="display: none;">
+                            <div class="flight-option" style="margin-left: auto;">
+                                <input type="checkbox" id="ve-re-nhat-thang" name="cheapest-month">
+                                <label for="ve-re-nhat-thang">Vé rẻ nhất tháng</label>
                             </div>
                         </div>
                         
-                        <div class="flight-passenger-inputs">
-                            <div class="flight-input-group">
-                                <label class="flight-input-label" for="nguoi-lon">Người lớn</label>
-                                <input type="number" id="nguoi-lon" class="flight-input passenger" value="1" min="1">
+                        <div class="form-search-flight">
+                            <div class="input-row">
+                                <div class="flight-input-group">
+                                    <label class="flight-input-label" for="diem-di">Điểm đi</label>
+                                    <input type="text" id="diem-di" class="flight-input" placeholder="Vui lòng nhập điểm đi">
+                                </div>
+                                
+                                <div class="flight-input-group">
+                                    <label class="flight-input-label" for="diem-den">Điểm đến</label>
+                                    <input type="text" id="diem-den" class="flight-input" placeholder="Vui lòng nhập điểm đến">
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <div class="flight-input-group">
+                                    <label class="flight-input-label" for="ngay-di">Ngày đi</label>
+                                    <input type="date" id="ngay-di" class="flight-input" value="17/05/2025">
+                                </div>
+                                <div class="flight-input-group">
+                                    <label class="flight-input-label" for="ngay-ve" style="display: none;">Ngày về</label>
+                                    <input type="date" id="ngay-ve" class="flight-input" value="17/05/2025" style="display: none;">
+                                </div>
                             </div>
                             
-                            <div class="flight-input-group">
-                                <label class="flight-input-label" for="tre-em">Trẻ em</label>
-                                <input type="number" id="tre-em" class="flight-input passenger" value="0" min="0">
+                            <div class="flight-passenger-inputs">
+                                <div class="flight-input-group">
+                                    <label class="flight-input-label" for="nguoi-lon">Người lớn</label>
+                                    <input type="number" id="nguoi-lon" class="flight-input passenger" value="1" min="1">
+                                </div>
+                                
+                                <div class="flight-input-group">
+                                    <label class="flight-input-label" for="tre-em">Trẻ em</label>
+                                    <input type="number" id="tre-em" class="flight-input passenger" value="0" min="0">
+                                </div>
+                                
+                                <div class="flight-input-group">
+                                    <label class="flight-input-label" for="em-be">Em bé</label>
+                                    <input type="number" id="em-be" class="flight-input passenger" value="0" min="0">
+                                </div>
+                                
+                                <button class="flight-btn-search" id="search-flight">Tìm chuyến bay</button>
                             </div>
-                            
-                            <div class="flight-input-group">
-                                <label class="flight-input-label" for="em-be">Em bé</label>
-                                <input type="number" id="em-be" class="flight-input passenger" value="0" min="0">
-                            </div>
-                            
-                            <button class="flight-btn-search" id="search-flight">Tìm chuyến bay</button>
                         </div>
                     </div>
-                </div>
                 </div>
             </form>
             
@@ -128,9 +128,7 @@
                     <h3 id="feedback-customer" class="feedback-customer-maybay">Chị Lê Thủy -</h3>
                 </div>
             </div>
-        </div>
-
-        <div class="list-customer-feedback">
+            <div class="list-customer-feedback">
             <ul>
                 <li><a onclick="loadFeedback2(this)">Chị Lê Thuỷ</a></li>
                 <li><a onclick="loadFeedback2(this)">Cô Minh Hoà</a></li>
@@ -140,6 +138,9 @@
                 <li><a onclick="loadFeedback2(this)">Cô Giang</a></li>
             </ul>
         </div>
+        </div>
+
+        
     </div>
 
     <div class="partner">

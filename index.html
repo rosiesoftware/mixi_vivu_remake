@@ -22,7 +22,7 @@
             <div>
                 <b class="hotline-text">Hotline: 0912345678</b>
             </div>
-            <a id="btn-contact" href="lien-he.html">Liên hệ Mixivivu</a>
+            <a id="btn-contact" href="lienhe.html">Liên hệ Mixivivu</a>
             <div class="menu-icon" onclick="showMenu()">
                 <div></div>
                 <div></div>
@@ -72,17 +72,19 @@
     </div>
     
     
-
-    <div class="intro">
-        <div class="cell1">
-            <h1>Du thuyền mới và phổ biến nhất</h1>
-        </div>
-        <div class="cell2">
-            <p>Tận hưởng sự xa hoa và đẳng cấp tối đa trên du thuyền mới nhất và phổ biến nhất. Khám phá một hành trình tuyệt vời đưa bạn vào thế giới của sự sang trọng, tiện nghi và trải nghiệm không thể quên.</p>
+    <div class="section-2">
+        <div class="intro">
+            <div class="cell1">
+                <h1>Du thuyền mới và phổ biến nhất</h1>
+            </div>
+            <div class="cell2">
+                <p>Tận hưởng sự xa hoa và đẳng cấp tối đa trên du thuyền mới nhất và phổ biến nhất. Khám phá một hành trình tuyệt vời đưa bạn vào thế giới của sự sang trọng, tiện nghi và trải nghiệm không thể quên.</p>
+            </div>
         </div>
     </div>
 
-    <div class="list-boat">
+    <div class="section-2">
+        <div class="list-boat">
         <div class="card-info">
            <img src="img/boat1.webp" alt="">
             <div class="card-content">
@@ -156,7 +158,10 @@
                 <button class="card-submit" href="#">Đặt ngay</button>
             </div>
         </div>
+        </div>
     </div>
+
+    
     <div>
         <button id="view-all-boat">Xem tất cả du thuyền &rarr;</button>
     </div>
@@ -185,17 +190,18 @@
                     <h3 id="feedback-customer" class="feedback-customer-duthuyen">Chị Thu Hà -</h3>
                 </div>
             </div>
+            <div class="list-customer-feedback">
+                <ul>
+                    <li><a onclick="loadFeedback(this)">Chị Thu Hà</a></li>
+                    <li><a onclick="loadFeedback(this)">Anh Khánh</a></li>
+                    <li><a onclick="loadFeedback(this)">Chị Linh - Anh Dũng</a></li>
+                    <li><a onclick="loadFeedback(this)">Bạn Minh Hoàng</a></li>
+                    <li><a onclick="loadFeedback(this)">Cô Thanh và bạn</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="list-customer-feedback">
-            <ul>
-                <li><a onclick="loadFeedback(this)">Chị Thu Hà</a></li>
-                <li><a onclick="loadFeedback(this)">Anh Khánh</a></li>
-                <li><a onclick="loadFeedback(this)">Chị Linh - Anh Dũng</a></li>
-                <li><a onclick="loadFeedback(this)">Bạn Minh Hoàng</a></li>
-                <li><a onclick="loadFeedback(this)">Cô Thanh và bạn</a></li>
-            </ul>
-        </div>
+        
     </div>
 
     <div class="intro-2">
@@ -205,36 +211,38 @@
         </div>
     </div>
 
-    
-    <div class="list-address">
-        <div class="card-info">
-            <img src="img/address1.png" alt="">
-            <div class="card-address-content">
-                <h2 class="card-address-title">Vịnh Hạ Long</h2>
+    <div class="section-2">
+        <div class="list-address">
+            <div class="card-info">
+                <img src="img/address1.png" alt="">
+                <div class="card-address-content">
+                    <h2 class="card-address-title">Vịnh Hạ Long</h2>
+                </div>
+                <div class="card-address-footer">
+                    <button href="#">Xem ngay</button>
+                </div>
             </div>
-            <div class="card-address-footer">
-                <button href="#">Xem ngay</button>
+            <div class="card-info">
+                <img src="img/address2.png" alt="">
+                <div class="card-address-content">
+                    <h2 class="card-address-title">Vịnh Lan Hạ</h2>
+                </div>
+                <div class="card-address-footer">
+                    <button href="#">Xem ngay</button>
+                </div>
             </div>
-        </div>
-        <div class="card-info">
-            <img src="img/address2.png" alt="">
-            <div class="card-address-content">
-                <h2 class="card-address-title">Vịnh Lan Hạ</h2>
-            </div>
-            <div class="card-address-footer">
-                <button href="#">Xem ngay</button>
-            </div>
-        </div>
-        <div class="card-info">
-            <img src="img/address3.png" alt="">
-            <div class="card-address-content">
-                <h2 class="card-address-title">Đảo Cát Bà</h2>
-            </div>
-            <div class="card-address-footer">
-                <button href="#">Xem ngay</button>
+            <div class="card-info">
+                <img src="img/address3.png" alt="">
+                <div class="card-address-content">
+                    <h2 class="card-address-title">Đảo Cát Bà</h2>
+                </div>
+                <div class="card-address-footer">
+                    <button href="#">Xem ngay</button>
+                </div>
             </div>
         </div>
     </div>
+    
 
     <div class="partner">
         <div class="fb-row1">
@@ -265,79 +273,86 @@
             </ul>
         </div>
     </div>
-    <div class="intro">
-        <div class="cell1">
-            <h1>Hạ Long: Khám phá Sự đặc sắc
-                và Cập nhật tin tức mới nhất</h1>
-        </div>
-        <div class="cell2">
-            <p>Hạ Long: Bí mật và Cuộc sống trong Vịnh - Khám phá và Cập nhật những tin tức hấp dẫn từ điểm đến tuyệt vời này.</p>
-        </div>
-    </div>
-    <div class="list-address">
-        <div class="card-info">
-            <img src="img/halong.webp" alt="">
-            <div class="card-address-content">
-                <h3 class="card-address-title">Du lịch Hạ Long - thời gian nào là đẹp nhất?</h3>
-                <p class="card-address-des">Hạ Long là một trong những điểm du lịch hot nhất miền Bắc được rất nhiều du khách yêu thích. Không chỉ có cảnh quan thiên nhiên ngoạn mục mà còn có vô số hoạt động trải nghiệm hấp dẫn như lênh đênh trên biển, ngắm cảnh từ du thuyền, tắm biển, chèo thuyền kayak, thăm các làng chài nổi tiếng trên vịnh. Vậy, đi Hạ Long vào mùa nào là đẹp nhất để có chuyến đi trọn vẹn và ý nghĩa nhất, hãy cùng tìm hiểu nhé</p>
-                <p>25/04/2025</p>
+    <div class="section-2">
+        <div class="intro">
+            <div class="cell1">
+                <h1>Hạ Long: Khám phá Sự đặc sắc
+                    và Cập nhật tin tức mới nhất</h1>
             </div>
-        </div>
-        <div class="card-info">
-            <img src="img/halong.webp" alt="">
-            <div class="card-address-content">
-                <h3 class="card-address-title">Du lịch Hạ Long - thời gian nào là đẹp nhất?</h3>
-                <p class="card-address-des">Hạ Long là một trong những điểm du lịch hot nhất miền Bắc được rất nhiều du khách yêu thích. Không chỉ có cảnh quan thiên nhiên ngoạn mục mà còn có vô số hoạt động trải nghiệm hấp dẫn như lênh đênh trên biển, ngắm cảnh từ du thuyền, tắm biển, chèo thuyền kayak, thăm các làng chài nổi tiếng trên vịnh. Vậy, đi Hạ Long vào mùa nào là đẹp nhất để có chuyến đi trọn vẹn và ý nghĩa nhất, hãy cùng tìm hiểu nhé</p>
-                <p>25/04/2025</p>
-            </div>
-        </div>
-        <div class="card-info">
-            <img src="img/halong.webp" alt="">
-            <div class="card-address-content">
-                <h3 class="card-address-title">Du lịch Hạ Long - thời gian nào là đẹp nhất?</h3>
-                <p class="card-address-des">Hạ Long là một trong những điểm du lịch hot nhất miền Bắc được rất nhiều du khách yêu thích. Không chỉ có cảnh quan thiên nhiên ngoạn mục mà còn có vô số hoạt động trải nghiệm hấp dẫn như lênh đênh trên biển, ngắm cảnh từ du thuyền, tắm biển, chèo thuyền kayak, thăm các làng chài nổi tiếng trên vịnh. Vậy, đi Hạ Long vào mùa nào là đẹp nhất để có chuyến đi trọn vẹn và ý nghĩa nhất, hãy cùng tìm hiểu nhé</p>
-                <p>25/04/2025</p>
+            <div class="cell2">
+                <p>Hạ Long: Bí mật và Cuộc sống trong Vịnh - Khám phá và Cập nhật những tin tức hấp dẫn từ điểm đến tuyệt vời này.</p>
             </div>
         </div>
     </div>
+    <div class="section-2">
+        <div class="list-address">
+            <div class="card-info">
+                <img src="img/halong.webp" alt="">
+                <div class="card-address-content">
+                    <h3 class="card-address-title">Du lịch Hạ Long - thời gian nào là đẹp nhất?</h3>
+                    <p class="card-address-des">Hạ Long là một trong những điểm du lịch hot nhất miền Bắc được rất nhiều du khách yêu thích. Không chỉ có cảnh quan thiên nhiên ngoạn mục mà còn có vô số hoạt động trải nghiệm hấp dẫn như lênh đênh trên biển, ngắm cảnh từ du thuyền, tắm biển, chèo thuyền kayak, thăm các làng chài nổi tiếng trên vịnh. Vậy, đi Hạ Long vào mùa nào là đẹp nhất để có chuyến đi trọn vẹn và ý nghĩa nhất, hãy cùng tìm hiểu nhé</p>
+                    <p>25/04/2025</p>
+                </div>
+            </div>
+            <div class="card-info">
+                <img src="img/halong.webp" alt="">
+                <div class="card-address-content">
+                    <h3 class="card-address-title">Du lịch Hạ Long - thời gian nào là đẹp nhất?</h3>
+                    <p class="card-address-des">Hạ Long là một trong những điểm du lịch hot nhất miền Bắc được rất nhiều du khách yêu thích. Không chỉ có cảnh quan thiên nhiên ngoạn mục mà còn có vô số hoạt động trải nghiệm hấp dẫn như lênh đênh trên biển, ngắm cảnh từ du thuyền, tắm biển, chèo thuyền kayak, thăm các làng chài nổi tiếng trên vịnh. Vậy, đi Hạ Long vào mùa nào là đẹp nhất để có chuyến đi trọn vẹn và ý nghĩa nhất, hãy cùng tìm hiểu nhé</p>
+                    <p>25/04/2025</p>
+                </div>
+            </div>
+            <div class="card-info">
+                <img src="img/halong.webp" alt="">
+                <div class="card-address-content">
+                    <h3 class="card-address-title">Du lịch Hạ Long - thời gian nào là đẹp nhất?</h3>
+                    <p class="card-address-des">Hạ Long là một trong những điểm du lịch hot nhất miền Bắc được rất nhiều du khách yêu thích. Không chỉ có cảnh quan thiên nhiên ngoạn mục mà còn có vô số hoạt động trải nghiệm hấp dẫn như lênh đênh trên biển, ngắm cảnh từ du thuyền, tắm biển, chèo thuyền kayak, thăm các làng chài nổi tiếng trên vịnh. Vậy, đi Hạ Long vào mùa nào là đẹp nhất để có chuyến đi trọn vẹn và ý nghĩa nhất, hãy cùng tìm hiểu nhé</p>
+                    <p>25/04/2025</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
     <div>
         <button id="view-all-boat">Xem tất cả &rarr;</button>
     </div>
+    
 
     <footer class="chan-footer">
         <div class="container-footer">
-        <div class="cot-footer">
-            <img src="img/white-logo.png" alt="Mixivivu Logo" class="logo-footer" />
-            <p>Công ty TNHH Du Lịch và Dịch Vụ Mixivivu</p>
-            <p>Tầng 7, số nhà 25, ngõ 38 phố Yên Lãng, phường Láng Hạ, quận Đống Đa, TP. Hà Nội</p>
-            <p>Mã số doanh nghiệp: 0110376372</p>
-            <p>Hotline: <strong>0922222016</strong></p>
-            <p>Email: <a href="mailto:info@mixivivu.com">info@mixivivu.com</a></p>
-        </div>
+            <div class="cot-footer">
+                <img src="img/white-logo.png" alt="Mixivivu Logo" class="logo-footer" />
+                <p>Công ty TNHH Du Lịch và Dịch Vụ Mixivivu</p>
+                <p>Tầng 7, số nhà 25, ngõ 38 phố Yên Lãng, phường Láng Hạ, quận Đống Đa, TP. Hà Nội</p>
+                <p>Mã số doanh nghiệp: 0110376372</p>
+                <p>Hotline: <strong>0922222016</strong></p>
+                <p>Email: <a href="mailto:info@mixivivu.com">info@mixivivu.com</a></p>
+            </div>
 
-        <div class="cot-footer">
-            <h3>GIỚI THIỆU</h3>
-            <a href="#">Về chúng tôi</a>
-            <a href="#">Điều khoản và điều kiện</a>
-            <a href="#">Chính sách riêng tư</a>
-            <a href="#">Hướng dẫn sử dụng</a>
-            <a href="#">Hình thức thanh toán</a>
-            <a href="#">Liên hệ</a>
-        </div>
+            <div class="cot-footer">
+                <h3>GIỚI THIỆU</h3>
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Điều khoản và điều kiện</a>
+                <a href="#">Chính sách riêng tư</a>
+                <a href="#">Hướng dẫn sử dụng</a>
+                <a href="#">Hình thức thanh toán</a>
+                <a href="#">Liên hệ</a>
+            </div>
 
-        <div class="cot-footer">
-            <h3>ĐIỂM ĐẾN</h3>
-            <a href="#">Vịnh Hạ Long</a>
-            <a href="#">Vịnh Lan Hạ</a>
-            <a href="#">Đảo Cát Bà</a>
-        </div>
+            <div class="cot-footer">
+                <h3>ĐIỂM ĐẾN</h3>
+                <a href="#">Vịnh Hạ Long</a>
+                <a href="#">Vịnh Lan Hạ</a>
+                <a href="#">Đảo Cát Bà</a>
+            </div>
 
-        <div class="cot-footer">
-            <h3>DU THUYỀN</h3>
-            <a href="#">Blog</a>
-            <a href="#">Quy định chung và lưu ý</a>
-            <a href="#">Câu hỏi thường gặp</a>
-        </div>
+            <div class="cot-footer">
+                <h3>DU THUYỀN</h3>
+                <a href="#">Blog</a>
+                <a href="#">Quy định chung và lưu ý</a>
+                <a href="#">Câu hỏi thường gặp</a>
+            </div>
         </div>
     </footer>
 
