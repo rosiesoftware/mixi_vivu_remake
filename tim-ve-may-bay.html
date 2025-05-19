@@ -1,219 +1,228 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_vu.css">
-    <link href="img/favicon.png" rel="shortcut icon">
-    <title>Mixi Vivu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_vu.css">
+  <link href="img/favicon.png" rel="shortcut icon">
+  <title>Mixi Vivu</title>
 </head>
+
 <body class="tim-ve-may-bay">
-    <div class="navbar">
-        <a href="index.html">
-            <img class="logo-web" src="img/black-logo.webp" alt="logo web">
-        </a>
+  <div class="navbar">
+    <a href="index.html">
+      <img class="logo-web" src="img/black-logo.webp" alt="logo web">
+    </a>
+    <ul>
+      <li><a href="tim-du-thuyen.html">Tìm du thuyền</a></li>
+      <li><a href="tim-ve-may-bay.html">Tìm vé máy bay</a></li>
+      <li><a href="tim-khach-san.html">Tìm khách sạn</a></li>
+      <li><a href="doanh-nghiep.html">Doanh nghiệp</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <div class="navbar-info">
+      <div>
+        <b class="hotline-text">Hotline: 0912345678</b>
+      </div>
+
+      <a id="btn-contact" href="lien-he.html">Liên hệ Mixivivu</a>
+      <div class="menu-icon" onclick="showMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <div class="section-1-index">
+    <div class="video-banner">
+      <video src="img/Mixivivumaybay.mp4" autoplay loop muted></video>
+      <form action="#">
+        <div class="menu-search-flight">
+          <div class="container">
+            <h1>Mở cánh cửa khám phá cùng Mixivivu</h1>
+            <p>Mixivivu - Đặt chân lên đỉnh mây với một bước nhảy</p>
+
+            <div class="flight-option-group">
+              <div class="flight-option">
+                <input type="radio" id="mot-chieu" name="flight-type" onclick="showKhuHoi()" checked>
+                <label for="mot-chieu">Một chiều</label>
+              </div>
+              <div class="flight-option">
+                <input type="radio" id="khu-hoi" name="flight-type" onclick="showKhuHoi()">
+                <label for="khu-hoi">Khứ hồi</label>
+              </div>
+              <div class="flight-option" style="margin-left: auto;">
+                <input type="checkbox" id="ve-re-nhat-thang" name="cheapest-month">
+                <label for="ve-re-nhat-thang">Vé rẻ nhất tháng</label>
+              </div>
+            </div>
+
+            <div class="form-search-flight">
+              <div class="input-row">
+                <div class="flight-input-group">
+                  <label class="flight-input-label" for="diem-di">Điểm đi</label>
+                  <input type="text" id="diem-di" class="flight-input" placeholder="Vui lòng nhập điểm đi">
+                </div>
+
+                <div class="flight-input-group">
+                  <label class="flight-input-label" for="diem-den">Điểm đến</label>
+                  <input type="text" id="diem-den" class="flight-input" placeholder="Vui lòng nhập điểm đến">
+                </div>
+              </div>
+              <div class="input-row">
+                <div class="flight-input-group">
+                  <label class="flight-input-label" for="ngay-di">Ngày đi</label>
+                  <input type="date" id="ngay-di" class="flight-input" value="17/05/2025">
+                </div>
+                <div class="flight-input-group">
+                  <label class="flight-input-label" for="ngay-ve" style="display: none;">Ngày về</label>
+                  <input type="date" id="ngay-ve" class="flight-input" value="17/05/2025" style="display: none;">
+                </div>
+              </div>
+
+              <div class="flight-passenger-inputs">
+                <div class="flight-input-group">
+                  <label class="flight-input-label" for="nguoi-lon">Người lớn</label>
+                  <input type="number" id="nguoi-lon" class="flight-input passenger" value="1" min="1">
+                </div>
+
+                <div class="flight-input-group">
+                  <label class="flight-input-label" for="tre-em">Trẻ em</label>
+                  <input type="number" id="tre-em" class="flight-input passenger" value="0" min="0">
+                </div>
+
+                <div class="flight-input-group">
+                  <label class="flight-input-label" for="em-be">Em bé</label>
+                  <input type="number" id="em-be" class="flight-input passenger" value="0" min="0">
+                </div>
+
+                <button class="flight-btn-search" id="search-flight">Tìm chuyến bay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+
+  </div>
+
+  <div class="feedback-flight">
+    <div class="fb-row1">
+      <div class="fb-cell1">
+        <h1>Đánh giá từ những người đã trải nghiệm</h1>
+      </div>
+      <div class="fb-cell2">
+        <p>Khách hàng chia sẻ về những kỷ niệm tuyệt vời trên chuyến du lịch với chúng tôi.</p>
+      </div>
+    </div>
+    <div class="fb-row2">
+      <div class="feedback-content">
+        <div class="feedback-title">
+          <div>
+            <h1>&ldquo;</h1>
+          </div>
+          <h3 id="feedback-title">
+          </h3>
+        </div>
+        <div class="feedback-content" class="feedback-content-maybay">
+          <p id="feedback-content" class="feedback-content-maybay">Chuyến bay của chị và gia đình đi chơi rất thuận lợi
+            em ạ. May là chị đặt vé bên em. Bên em tư vấn chọn chuyến cho chị xong lại check in online cho chị nữa nên
+            cả nhà được ngồi gần nhau. Bạn lớn nhà chị được ngồi cạnh cửa sổ nhìn ngắm lúc cất cánh thích lắm! Nhà chị
+            cũng thường xuyên đi chơi nên chị sẽ đặt vé bên em nhiều nhiều!</p>
+        </div>
+        <div class="feedback-customer" class="feedback-content-maybay">
+          <h3 id="feedback-customer" class="feedback-customer-maybay">Chị Lê Thủy -</h3>
+        </div>
+      </div>
+      <div class="list-customer-feedback">
         <ul>
-            <li><a href="tim-du-thuyen.html">Tìm du thuyền</a></li>
-            <li><a href="tim-ve-may-bay.html">Tìm vé máy bay</a></li>
-            <li><a href="tim-khach-san.html">Tìm khách sạn</a></li>
-            <li><a href="doanh-nghiep.html">Doanh nghiệp</a></li>
-            <li><a href="blog.html">Blog</a></li>
+          <li><a onclick="loadFeedback2(this)">Chị Lê Thuỷ</a></li>
+          <li><a onclick="loadFeedback2(this)">Cô Minh Hoà</a></li>
+          <li><a onclick="loadFeedback2(this)">Anh Quang Anh</a></li>
+          <li><a onclick="loadFeedback2(this)">Chị Giang</a></li>
+          <li><a onclick="loadFeedback2(this)">Bạn Chu Huyền</a></li>
+          <li><a onclick="loadFeedback2(this)">Cô Giang</a></li>
         </ul>
-        <div class="navbar-info">
-            <div>
-                <b class="hotline-text">Hotline: 0912345678</b>
-            </div>
-            <a id="btn-contact" href="lienhe.html">Liên hệ Mixivivu</a>
-            <div class="menu-icon" onclick="showMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-    </div>
-    <div class="section-1-index">
-        <div class="video-banner">
-            <video src="img/Mixivivumaybay.mp4" autoplay loop muted></video>
-            <form action="#">
-                <div class="menu-search-flight">
-                    <div class="container">
-                        <h1>Mở cánh cửa khám phá cùng Mixivivu</h1>
-                        <p>Mixivivu - Đặt chân lên đỉnh mây với một bước nhảy</p>
-                        
-                        <div class="flight-option-group">
-                            <div class="flight-option">
-                                <input type="radio" id="mot-chieu" name="flight-type" onclick="showKhuHoi()" checked>
-                                <label for="mot-chieu">Một chiều</label>
-                            </div>
-                            <div class="flight-option">
-                                <input type="radio" id="khu-hoi" name="flight-type" onclick="showKhuHoi()">
-                                <label for="khu-hoi">Khứ hồi</label>
-                            </div>
-                            <div class="flight-option" style="margin-left: auto;">
-                                <input type="checkbox" id="ve-re-nhat-thang" name="cheapest-month">
-                                <label for="ve-re-nhat-thang">Vé rẻ nhất tháng</label>
-                            </div>
-                        </div>
-                        
-                        <div class="form-search-flight">
-                            <div class="input-row">
-                                <div class="flight-input-group">
-                                    <label class="flight-input-label" for="diem-di">Điểm đi</label>
-                                    <input type="text" id="diem-di" class="flight-input" placeholder="Vui lòng nhập điểm đi">
-                                </div>
-                                
-                                <div class="flight-input-group">
-                                    <label class="flight-input-label" for="diem-den">Điểm đến</label>
-                                    <input type="text" id="diem-den" class="flight-input" placeholder="Vui lòng nhập điểm đến">
-                                </div>
-                            </div>
-                            <div class="input-row">
-                                <div class="flight-input-group">
-                                    <label class="flight-input-label" for="ngay-di">Ngày đi</label>
-                                    <input type="date" id="ngay-di" class="flight-input" value="17/05/2025">
-                                </div>
-                                <div class="flight-input-group">
-                                    <label class="flight-input-label" for="ngay-ve" style="display: none;">Ngày về</label>
-                                    <input type="date" id="ngay-ve" class="flight-input" value="17/05/2025" style="display: none;">
-                                </div>
-                            </div>
-                            
-                            <div class="flight-passenger-inputs">
-                                <div class="flight-input-group">
-                                    <label class="flight-input-label" for="nguoi-lon">Người lớn</label>
-                                    <input type="number" id="nguoi-lon" class="flight-input passenger" value="1" min="1">
-                                </div>
-                                
-                                <div class="flight-input-group">
-                                    <label class="flight-input-label" for="tre-em">Trẻ em</label>
-                                    <input type="number" id="tre-em" class="flight-input passenger" value="0" min="0">
-                                </div>
-                                
-                                <div class="flight-input-group">
-                                    <label class="flight-input-label" for="em-be">Em bé</label>
-                                    <input type="number" id="em-be" class="flight-input passenger" value="0" min="0">
-                                </div>
-                                
-                                <button class="flight-btn-search" id="search-flight">Tìm chuyến bay</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            
-        </div>
-    
-    
-    </div>
-    
-    <div class="feedback-flight">
-        <div class="fb-row1">
-            <div class="fb-cell1">
-                <h1>Đánh giá từ những người đã trải nghiệm</h1>
-            </div>
-            <div class="fb-cell2">
-                <p>Khách hàng chia sẻ về những kỷ niệm tuyệt vời trên chuyến du lịch với chúng tôi.</p>
-            </div>
-        </div>
-        <div class="fb-row2">
-            <div class="feedback-content">
-                <div class="feedback-title">
-                    <div><h1>&ldquo;</h1></div>
-                    <h3 id="feedback-title">
-                    </h3>
-                </div>
-                <div class="feedback-content" class="feedback-content-maybay">
-                    <p id="feedback-content" class="feedback-content-maybay">Chuyến bay của chị và gia đình đi chơi rất thuận lợi em ạ. May là chị đặt vé bên em. Bên em tư vấn chọn chuyến cho chị xong lại check in online cho chị nữa nên cả nhà được ngồi gần nhau. Bạn lớn nhà chị được ngồi cạnh cửa sổ nhìn ngắm lúc cất cánh thích lắm! Nhà chị cũng thường xuyên đi chơi nên chị sẽ đặt vé bên em nhiều nhiều!</p>
-                </div>
-                <div class="feedback-customer" class="feedback-content-maybay">
-                    <h3 id="feedback-customer" class="feedback-customer-maybay">Chị Lê Thủy -</h3>
-                </div>
-            </div>
-            <div class="list-customer-feedback">
-            <ul>
-                <li><a onclick="loadFeedback2(this)">Chị Lê Thuỷ</a></li>
-                <li><a onclick="loadFeedback2(this)">Cô Minh Hoà</a></li>
-                <li><a onclick="loadFeedback2(this)">Anh Quang Anh</a></li>
-                <li><a onclick="loadFeedback2(this)">Chị Giang</a></li>
-                <li><a onclick="loadFeedback2(this)">Bạn Chu Huyền</a></li>
-                <li><a onclick="loadFeedback2(this)">Cô Giang</a></li>
-            </ul>
-        </div>
-        </div>
-
-        
+      </div>
     </div>
 
-    <div class="partner">
-        <div class="fb-row1">
-            <div class="fb-cell1">
-                <h1>Đối tác Cùng các
-                    Hãng máy bay lớn</h1>
-            </div>
-            <div class="fb-cell2">
-                <p>Đối tác hàng đầu với các hãng máy bay lớn: Ưu đãi độc quyền dành riêng cho bạn</p>
-            </div>
-        </div>
-        <div class="partner-row2">
-            <ul>
-                <li><img src="img/flight-partner-0.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-1.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-2.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-3.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-4.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-5.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-6.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-7.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-8.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-9.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-10.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-11.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-12.png" alt="flight partner icon"></li>
-                <li><img src="img/flight-partner-13.png" alt="flight partner icon"></li>
-            </ul>
-        </div>
-        <div class="partner-row3">
-            
-        </div>
+
+  </div>
+
+  <div class="partner">
+    <div class="fb-row1">
+      <div class="fb-cell1">
+        <h1>Đối tác Cùng các
+          Hãng máy bay lớn</h1>
+      </div>
+      <div class="fb-cell2">
+        <p>Đối tác hàng đầu với các hãng máy bay lớn: Ưu đãi độc quyền dành riêng cho bạn</p>
+      </div>
     </div>
+    <div class="partner-row2">
+      <ul>
+        <li><img src="img/flight-partner-0.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-1.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-2.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-3.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-4.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-5.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-6.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-7.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-8.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-9.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-10.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-11.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-12.png" alt="flight partner icon"></li>
+        <li><img src="img/flight-partner-13.png" alt="flight partner icon"></li>
+      </ul>
+    </div>
+    <div class="partner-row3">
 
-    <footer class="chan-footer">
-        <div class="container-footer">
-        <div class="cot-footer">
-            <img src="img/white-logo.png" alt="Mixivivu Logo" class="logo-footer" />
-            <p>Công ty TNHH Du Lịch và Dịch Vụ Mixivivu</p>
-            <p>Tầng 7, số nhà 25, ngõ 38 phố Yên Lãng, phường Láng Hạ, quận Đống Đa, TP. Hà Nội</p>
-            <p>Mã số doanh nghiệp: 0110376372</p>
-            <p>Hotline: <strong>0922222016</strong></p>
-            <p>Email: <a href="mailto:info@mixivivu.com">info@mixivivu.com</a></p>
-        </div>
+    </div>
+  </div>
 
-        <div class="cot-footer">
-            <h3>GIỚI THIỆU</h3>
-            <a href="#">Về chúng tôi</a>
-            <a href="#">Điều khoản và điều kiện</a>
-            <a href="#">Chính sách riêng tư</a>
-            <a href="#">Hướng dẫn sử dụng</a>
-            <a href="#">Hình thức thanh toán</a>
-            <a href="#">Liên hệ</a>
-        </div>
+  <footer class="chan-footer">
+    <div class="container-footer">
+      <div class="cot-footer">
+        <img src="img/white-logo.png" alt="Mixivivu Logo" class="logo-footer" />
+        <p>Công ty TNHH Du Lịch và Dịch Vụ Mixivivu</p>
+        <p>Tầng 7, số nhà 25, ngõ 38 phố Yên Lãng, phường Láng Hạ, quận Đống Đa, TP. Hà Nội</p>
+        <p>Mã số doanh nghiệp: 0110376372</p>
+        <p>Hotline: <strong>0922222016</strong></p>
+        <p>Email: <a href="mailto:info@mixivivu.com">info@mixivivu.com</a></p>
+      </div>
 
-        <div class="cot-footer">
-            <h3>ĐIỂM ĐẾN</h3>
-            <a href="#">Vịnh Hạ Long</a>
-            <a href="#">Vịnh Lan Hạ</a>
-            <a href="#">Đảo Cát Bà</a>
-        </div>
+      <div class="cot-footer">
+        <h3>GIỚI THIỆU</h3>
+        <a href="#">Về chúng tôi</a>
+        <a href="#">Điều khoản và điều kiện</a>
+        <a href="#">Chính sách riêng tư</a>
+        <a href="#">Hướng dẫn sử dụng</a>
+        <a href="#">Hình thức thanh toán</a>
+        <a href="#">Liên hệ</a>
+      </div>
 
-        <div class="cot-footer">
-            <h3>DU THUYỀN</h3>
-            <a href="#">Blog</a>
-            <a href="#">Quy định chung và lưu ý</a>
-            <a href="#">Câu hỏi thường gặp</a>
-        </div>
-        </div>
-    </footer>
+      <div class="cot-footer">
+        <h3>ĐIỂM ĐẾN</h3>
+        <a href="#">Vịnh Hạ Long</a>
+        <a href="#">Vịnh Lan Hạ</a>
+        <a href="#">Đảo Cát Bà</a>
+      </div>
+
+      <div class="cot-footer">
+        <h3>DU THUYỀN</h3>
+        <a href="#">Blog</a>
+        <a href="#">Quy định chung và lưu ý</a>
+        <a href="#">Câu hỏi thường gặp</a>
+      </div>
+    </div>
+  </footer>
 
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

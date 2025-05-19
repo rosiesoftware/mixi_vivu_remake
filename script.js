@@ -1,8 +1,9 @@
 function showDropDown(button) {
+    console.log("test");
     document.querySelectorAll('.dropdown-content').forEach(drop => {
-            drop.style.display = 'none';
-        });
-    
+        drop.style.display = 'none';
+    });
+
     const dropdown = button.nextElementSibling;
     dropdown.style.display = 'block';
 }
@@ -21,28 +22,18 @@ document.addEventListener('click', function (e) {
     }
 });
 
-document.addEventListener('click', function (e) {
-    if (!e.target.closest('.dropdown-filter')) {
-        document.querySelectorAll('.dropdown-content').forEach(drop => {
-            drop.style.display = 'none';
-        });
-    }
-});
-
-
-function loadFeedback(element)
-{
+function loadFeedback(element) {
     var elementName = element.innerText;
     indexSlideFeedback = list_customer.indexOf(elementName);
-    
-    SlideFeedback(); 
+
+    SlideFeedback();
 }
-function loadFeedback2(element)
-{
+
+function loadFeedback2(element) {
     var elementName = element.innerText;
     indexSlideFeedback2 = list_customer2.indexOf(elementName);
-    
-    SlideFeedback2(); 
+
+    SlideFeedback2();
 }
 
 var indexSlideFeedback = 0;
@@ -55,11 +46,10 @@ var list_content = ["Chị rất cảm ơn team đã tư vấn cho chị chọn 
     "Du thuyền 5 sao và sự trải nghiệm tuyệt vời. Tour của chúng tôi đi rất đầy đủ như theo chương trình đã thông báo trước. Đồ ăn khá đa dạng, nấu vừa với khẩu vị của tất cả mọi độ tuổi từ bé đến các bác U80.\nChúng tôi được trải nghiệm gần như đầy đủ các hoạt động chèo kayak,thăm hang,thăm vịnh.... và loại hải sản tươi ngon\nRất đáng nhớ !!!"
 ]
 
-function SlideFeedback()
-{
+function SlideFeedback() {
     if (indexSlideFeedback >= 5)
         indexSlideFeedback = 0;
-    
+
     var title = document.getElementsByClassName("feedback-title-duthuyen")[0];
     var content = document.getElementsByClassName("feedback-content-duthuyen")[0];
     var customer = document.getElementsByClassName("feedback-customer-duthuyen")[0];
@@ -70,8 +60,7 @@ function SlideFeedback()
 
     indexSlideFeedback += 1;
 }
-if (document.getElementsByClassName("feedback-content-duthuyen")[0] != null)
-{
+if (document.getElementsByClassName("feedback-content-duthuyen")[0] != null) {
     setInterval(SlideFeedback, 5000);
 }
 
@@ -86,11 +75,10 @@ var list_content2 = ["Chuyến bay của chị và gia đình đi chơi rất th
     "Cô bị đau chân nên hay phải chọn chỗ ngồi thoải mái. Bên cháu tư vấn tốt lắm! Bạn đặt vé chọn cho cô máy bay to, thân rộng. Cô rất ưng í! Mấy hôm nữa cô lại bay tiếp nên nhờ bên cháu kiểm tra vé và đặt chỗ cho cô nhé!"
 ]
 
-function SlideFeedback2()
-{
+function SlideFeedback2() {
     if (indexSlideFeedback2 >= 6)
         indexSlideFeedback2 = 0;
-    
+
     var content = document.getElementsByClassName("feedback-content-maybay")[0];
     var customer = document.getElementsByClassName("feedback-customer-maybay")[0];
 
@@ -100,23 +88,18 @@ function SlideFeedback2()
     indexSlideFeedback2 += 1;
 }
 
-if (document.getElementsByClassName("feedback-content-maybay")[0] != null)
-{
+if (document.getElementsByClassName("feedback-content-maybay")[0] != null) {
     setInterval(SlideFeedback2, 5000);
 }
 
-function showKhuHoi()
-{
+function showKhuHoi() {
     var khuHoi = document.getElementById("khu-hoi");
     var ngayVe = document.getElementById("ngay-ve");
     var labelNgayVe = document.getElementsByClassName("flight-input-label")[3];
-    if (khuHoi.checked)
-    {
+    if (khuHoi.checked) {
         labelNgayVe.style.display = 'block';
         ngayVe.style.display = 'block';
-    }
-    else
-    {
+    } else {
         labelNgayVe.style.display = 'none';
         ngayVe.style.display = 'none';
     }

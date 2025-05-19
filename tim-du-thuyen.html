@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,9 +7,10 @@
     <link rel="stylesheet" href="style_vu.css">
     <link href="img/favicon.png" rel="shortcut icon">
 </head>
+
 <body class="tim-du-thuyen">
     <div class="navbar">
-         <a href="index.html">
+        <a href="index.html">
             <img class="logo-web" src="img/black-logo.webp" alt="logo web">
         </a>
         <ul>
@@ -65,27 +67,27 @@
                 </div>
             </div>
         </form>
-       
+
         <div class="section-1">
             <div class="result-search">
                 <h1>Tìm thấy 71 kết quả</h1>
             </div>
             <div class="dropdown">
-                <input type="button" id="filter-result" class="bo-loc" style="display: none;" value="Bộ lọc">
+                <input type="button" id="bo-loc" class="filter-result" style="display: none;" value="Bộ lọc">
             </div>
             <div class="dropdown">
-                <input type="button" onclick="showDropDown(this)" id="filter-result" value="Không sắp xếp">
+                <input type="button" onclick="showDropDown(this)" id="sap-xep" class="filter-result" value="Không sắp xếp">
                 <div id="filterDropDown" class="dropdown-content">
-                    <a onclick="hideDropDown(this, 'filter-result', 'filterDropDown')">Không sắp xếp</a>
-                    <a onclick="hideDropDown(this, 'filter-result', 'filterDropDown')">Giá thấp đến cao</a>
-                    <a onclick="hideDropDown(this, 'filter-result', 'filterDropDown')">Giá cao đến thấp</a>
+                    <a onclick="hideDropDown(this, 'sap-xep', 'filterDropDown')">Không sắp xếp</a>
+                    <a onclick="hideDropDown(this, 'sap-xep', 'filterDropDown')">Giá thấp đến cao</a>
+                    <a onclick="hideDropDown(this, 'sap-xep', 'filterDropDown')">Giá cao đến thấp</a>
                 </div>
             </div>
         </div>
         <div class="section-2">
             <div class="cell1">
                 <div class="row1">
-                   <div class="panel-filter">
+                    <div class="panel-filter">
                         <div class="section-filter1">
                             <h3 class="filter-title">Lọc kết quả</h3>
                             <div class="reset-filter">Đặt lại</div>
@@ -118,7 +120,8 @@
                                         <li><label><input type="checkbox"> Phòng có bồn tắm</label></li>
                                         <li><label><input type="checkbox"> Wi-Fi miễn phí</label></li>
                                         <li><label><input type="checkbox"> Miễn phí kayaking</label></li>
-                                        <li><label><input type="checkbox"> Trung tâm Spa & chăm sóc sức khoẻ</label></li>
+                                        <li><label><input type="checkbox"> Trung tâm Spa & chăm sóc sức khoẻ</label>
+                                        </li>
                                         <li><label><input type="checkbox"> Chỗ đỗ xe miễn phí</label></li>
                                         <li><label><input type="checkbox"> Miễn phí xe đưa đón</label></li>
                                         <li><label><input type="checkbox"> Có bể bơi ngoài trời</label></li>
@@ -127,7 +130,8 @@
                                         <li><label><input type="checkbox"> Bể bơi ngoài trời</label></li>
                                         <li><label><input type="checkbox"> Du thuyền 5 sao</label></li>
                                         <li><label><input type="checkbox"> Chỗ đỗ xe</label></li>
-                                        <li><label><input type="checkbox"> Trà/cà phê trong tất cả các phòng</label></li>
+                                        <li><label><input type="checkbox"> Trà/cà phê trong tất cả các phòng</label>
+                                        </li>
                                         <li><label><input type="checkbox"> Nhìn ra biển</label></li>
                                         <li><label><input type="checkbox"> Điều hoà</label></li>
                                         <li><label><input type="checkbox"> Cửa sổ từ sàn đến trần</label></li>
@@ -275,7 +279,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="pagination-container">
                     <div class="pagination-info">
                         Đang xem: <span class="current">5</span> của <span class="total">71</span>
@@ -293,49 +297,50 @@
                     </ul>
                 </div>
             </div>
-            
+
         </div>
-        
-        
+
+
     </div>
 
     <footer class="chan-footer">
         <div class="container-footer">
-        <div class="cot-footer">
-            <img src="img/white-logo.png" alt="Mixivivu Logo" class="logo-footer" />
-            <p>Công ty TNHH Du Lịch và Dịch Vụ Mixivivu</p>
-            <p>Tầng 7, số nhà 25, ngõ 38 phố Yên Lãng, phường Láng Hạ, quận Đống Đa, TP. Hà Nội</p>
-            <p>Mã số doanh nghiệp: 0110376372</p>
-            <p>Hotline: <strong>0922222016</strong></p>
-            <p>Email: <a href="mailto:info@mixivivu.com">info@mixivivu.com</a></p>
-        </div>
+            <div class="cot-footer">
+                <img src="img/white-logo.png" alt="Mixivivu Logo" class="logo-footer" />
+                <p>Công ty TNHH Du Lịch và Dịch Vụ Mixivivu</p>
+                <p>Tầng 7, số nhà 25, ngõ 38 phố Yên Lãng, phường Láng Hạ, quận Đống Đa, TP. Hà Nội</p>
+                <p>Mã số doanh nghiệp: 0110376372</p>
+                <p>Hotline: <strong>0922222016</strong></p>
+                <p>Email: <a href="mailto:info@mixivivu.com">info@mixivivu.com</a></p>
+            </div>
 
-        <div class="cot-footer">
-            <h3>GIỚI THIỆU</h3>
-            <a href="#">Về chúng tôi</a>
-            <a href="#">Điều khoản và điều kiện</a>
-            <a href="#">Chính sách riêng tư</a>
-            <a href="#">Hướng dẫn sử dụng</a>
-            <a href="#">Hình thức thanh toán</a>
-            <a href="#">Liên hệ</a>
-        </div>
+            <div class="cot-footer">
+                <h3>GIỚI THIỆU</h3>
+                <a href="#">Về chúng tôi</a>
+                <a href="#">Điều khoản và điều kiện</a>
+                <a href="#">Chính sách riêng tư</a>
+                <a href="#">Hướng dẫn sử dụng</a>
+                <a href="#">Hình thức thanh toán</a>
+                <a href="#">Liên hệ</a>
+            </div>
 
-        <div class="cot-footer">
-            <h3>ĐIỂM ĐẾN</h3>
-            <a href="#">Vịnh Hạ Long</a>
-            <a href="#">Vịnh Lan Hạ</a>
-            <a href="#">Đảo Cát Bà</a>
-        </div>
+            <div class="cot-footer">
+                <h3>ĐIỂM ĐẾN</h3>
+                <a href="#">Vịnh Hạ Long</a>
+                <a href="#">Vịnh Lan Hạ</a>
+                <a href="#">Đảo Cát Bà</a>
+            </div>
 
-        <div class="cot-footer">
-            <h3>DU THUYỀN</h3>
-            <a href="#">Blog</a>
-            <a href="#">Quy định chung và lưu ý</a>
-            <a href="#">Câu hỏi thường gặp</a>
-        </div>
+            <div class="cot-footer">
+                <h3>DU THUYỀN</h3>
+                <a href="#">Blog</a>
+                <a href="#">Quy định chung và lưu ý</a>
+                <a href="#">Câu hỏi thường gặp</a>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
